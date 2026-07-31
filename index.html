@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Landing pages rápidas, responsivas e focadas em conversão, desenvolvidas por Eduardo Simionato." />
+  <meta name="theme-color" content="#07070a" />
+  <title>Eduardo Simionato | Landing Pages que geram contatos</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: '#07070a',
+            panel: '#111116',
+            line: '#27272f',
+            brand: '#5b7cff',
+            brand2: '#7c3aed',
+            whatsapp: '#22c55e'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif']
+          },
+          boxShadow: {
+            glow: '0 0 80px rgba(91,124,255,.22)',
+            card: '0 18px 60px rgba(0,0,0,.14)'
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: Inter, sans-serif; }
+    h1,h2,h3,.font-display { font-family: 'Space Grotesk', sans-serif; }
+    .grid-bg {
+      background-image: linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+      background-size: 34px 34px;
+    }
+    .noise:after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.035; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E"); }
+    .project-shot { transition: transform .7s cubic-bezier(.2,.8,.2,1); }
+    .project-card:hover .project-shot { transform: scale(1.045); }
+    .reveal { opacity:0; transform:translateY(22px); transition:opacity .7s ease,transform .7s ease; }
+    .reveal.visible { opacity:1; transform:none; }
+    .faq-content { max-height:0; overflow:hidden; transition:max-height .35s ease; }
+    .faq-item.open .faq-content { max-height:220px; }
+    .faq-item.open .faq-icon { transform:rotate(45deg); }
+    .marquee { animation: marquee 28s linear infinite; }
+    .hide-scrollbar::-webkit-scrollbar { display:none; }
+    .hide-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
+    @keyframes marquee { from { transform:translateX(0) } to { transform:translateX(-50%) } }
+    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } .reveal {opacity:1; transform:none;} }
+  </style>
+</head>
+<body class="bg-white text-zinc-900 antialiased selection:bg-brand selection:text-white">
+
+<header id="header" class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/75 backdrop-blur-xl">
+  <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+    <a href="#inicio" class="text-white"><span class="font-display text-lg font-bold tracking-tight sm:text-xl">Eduardo Simionato</span></a>
+
+    <nav class="hidden items-center gap-7 lg:flex">
+      <a href="#sobre" class="text-sm text-zinc-400 hover:text-white">Sobre</a>
+      <a href="#servicos" class="text-sm text-zinc-400 hover:text-white">Soluções</a>
+      <a href="#portfolio" class="text-sm text-zinc-400 hover:text-white">Portfólio</a>
+      <a href="#processo" class="text-sm text-zinc-400 hover:text-white">Processo</a>
+      <a href="#faq" class="text-sm text-zinc-400 hover:text-white">FAQ</a>
+      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white hover:brightness-110"><i class="ph-fill ph-whatsapp-logo text-lg"></i> Solicitar orçamento</a>
+    </nav>
+
+    <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-xl border border-white/10 text-white lg:hidden" aria-label="Abrir menu" aria-expanded="false"><i class="ph ph-list text-2xl"></i></button>
+  </div>
+  <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink px-4 py-4 lg:hidden">
+    <nav class="flex flex-col gap-1">
+      <a href="#sobre" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Sobre</a>
+      <a href="#servicos" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Soluções</a>
+      <a href="#portfolio" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Portfólio</a>
+      <a href="#processo" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Processo</a>
+      <a href="#faq" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">FAQ</a>
+      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-semibold text-white"><i class="ph-fill ph-whatsapp-logo text-xl"></i> Falar no WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+<section id="inicio" class="noise relative overflow-hidden bg-ink pt-28 text-white sm:pt-32 lg:min-h-[820px] lg:pt-40">
+  <div class="absolute inset-0 grid-bg opacity-60"></div>
+  <div class="absolute -left-40 top-10 h-96 w-96 rounded-full bg-brand/25 blur-[120px]"></div>
+  <div class="absolute -right-24 top-48 h-96 w-96 rounded-full bg-brand2/20 blur-[130px]"></div>
+
+  <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-4 pb-20 sm:px-6 lg:grid-cols-[1.02fr_.98fr] lg:px-8 lg:pb-28">
+    <div class="text-center lg:text-left">
+      <div class="mb-7 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 py-2 pl-2 pr-4 backdrop-blur">
+        <img src="eduardo.png" alt="Eduardo Simionato" class="h-9 w-9 rounded-full object-cover" />
+        <span class="text-sm text-zinc-300">Desenvolvimento, design e estratégia em uma só entrega</span>
+      </div>
+      <h1 class="font-display text-4xl font-bold leading-[1.05] tracking-[-.04em] sm:text-6xl lg:text-7xl">
+        Landing pages que transformam <span class="bg-gradient-to-r from-[#8aa0ff] to-[#b284ff] bg-clip-text text-transparent">visitas em conversas.</span>
+      </h1>
+      <p class="mx-auto mt-7 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg lg:mx-0">
+        Crio sites rápidos, responsivos e visualmente profissionais para apresentar seu negócio com clareza e conduzir o cliente até o WhatsApp.
+      </p>
+      <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
+        <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento%20para%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-4 font-semibold text-white shadow-lg shadow-whatsapp/20 hover:-translate-y-0.5 hover:brightness-110"><i class="ph-fill ph-whatsapp-logo text-xl"></i> Solicitar orçamento</a>
+        <a href="#portfolio" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-4 font-semibold text-white hover:bg-white/10">Ver projetos <i class="ph-bold ph-arrow-down"></i></a>
+      </div>
+      <div class="mt-9 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-zinc-400 lg:justify-start">
+        <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand"></i> Mobile-first</span>
+        <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand"></i> Carregamento rápido</span>
+        <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand"></i> CTA estratégico</span>
+      </div>
+    </div>
+
+    <div class="relative mx-auto w-full max-w-xl lg:max-w-none">
+      <div class="absolute inset-8 rounded-full bg-brand/20 blur-[90px]"></div>
+      <div class="relative rounded-[26px] border border-white/10 bg-white/[.045] p-3 shadow-2xl backdrop-blur sm:p-5">
+        <div class="overflow-hidden rounded-2xl border border-white/10 bg-panel">
+          <div class="flex h-11 items-center gap-2 border-b border-white/10 px-4">
+            <span class="h-2.5 w-2.5 rounded-full bg-red-400"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-400"></span><span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
+            <span class="ml-3 truncate text-xs text-zinc-500">paiva-baptista.vercel.app</span>
+          </div>
+          <img src="https://image.thum.io/get/wait/5/width/2200/crop/1200/noanimate/https://paiva-baptista.vercel.app/" alt="Projeto Paiva & Baptista Advogados" class="aspect-[16/10] w-full object-cover object-top" />
+        </div>
+      </div>
+      <div class="absolute -bottom-6 left-3 rounded-2xl border border-white/10 bg-panel/95 px-4 py-3 shadow-2xl backdrop-blur sm:left-[-24px]">
+        <p class="text-xs uppercase tracking-[.18em] text-zinc-500">Projeto mais recente</p>
+        <p class="mt-1 font-display font-semibold">Paiva & Baptista Advogados</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="overflow-hidden border-y border-zinc-200 bg-zinc-50 py-4">
+  <div class="marquee flex w-max items-center gap-10 whitespace-nowrap text-sm font-semibold uppercase tracking-[.2em] text-zinc-400">
+    <span>Landing Pages</span><span>•</span><span>Design Responsivo</span><span>•</span><span>WhatsApp</span><span>•</span><span>Performance</span><span>•</span><span>SEO Técnico</span><span>•</span>
+    <span>Landing Pages</span><span>•</span><span>Design Responsivo</span><span>•</span><span>WhatsApp</span><span>•</span><span>Performance</span><span>•</span><span>SEO Técnico</span><span>•</span>
+  </div>
+</section>
+
+<section id="sobre" class="py-20 sm:py-28">
+  <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+    <div class="reveal relative mx-auto w-full max-w-md">
+      <div class="absolute -inset-4 rotate-3 rounded-[30px] bg-gradient-to-br from-brand/15 to-brand2/15"></div>
+      <img src="eduardo.png" alt="Retrato de Eduardo Simionato" class="relative aspect-[4/5] w-full rounded-[26px] object-cover shadow-card" />
+      <div class="absolute -bottom-5 -right-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-card sm:-right-8">
+        <div class="flex items-center gap-3"><span class="grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand"><i class="ph-bold ph-rocket-launch text-xl"></i></span><div><p class="text-xs uppercase tracking-wider text-zinc-400">Especialidade</p><p class="font-display font-bold">Sites de conversão</p></div></div>
+      </div>
+    </div>
+    <div class="reveal">
+      <p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">Sobre o trabalho</p>
+      <h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Seu site precisa explicar, convencer e facilitar o próximo passo.</h2>
+      <div class="mt-7 space-y-5 text-base leading-8 text-zinc-600 sm:text-lg">
+        <p>Uma landing page eficiente não é apenas bonita. Ela organiza a informação, transmite credibilidade e reduz o caminho entre a dúvida do visitante e o contato com sua empresa.</p>
+        <p>Meu processo combina estrutura de conteúdo, design responsivo e desenvolvimento front-end para entregar uma página coerente com o posicionamento do seu negócio.</p>
+      </div>
+      <div class="mt-9 grid gap-4 sm:grid-cols-3">
+        <div class="rounded-2xl border border-zinc-200 p-5"><i class="ph-bold ph-device-mobile text-2xl text-brand"></i><p class="mt-3 font-display font-bold">Mobile-first</p><p class="mt-1 text-sm text-zinc-500">Prioridade para a experiência no celular.</p></div>
+        <div class="rounded-2xl border border-zinc-200 p-5"><i class="ph-bold ph-lightning text-2xl text-brand"></i><p class="mt-3 font-display font-bold">Performance</p><p class="mt-1 text-sm text-zinc-500">Estrutura leve e carregamento eficiente.</p></div>
+        <div class="rounded-2xl border border-zinc-200 p-5"><i class="ph-bold ph-target text-2xl text-brand"></i><p class="mt-3 font-display font-bold">Conversão</p><p class="mt-1 text-sm text-zinc-500">Chamadas para ação claras e estratégicas.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos" class="bg-zinc-950 py-20 text-white sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal max-w-3xl">
+      <p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-[#8aa0ff]">Soluções</p>
+      <h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Uma página completa, sem complicar o processo.</h2>
+      <p class="mt-6 text-lg leading-8 text-zinc-400">Do planejamento à publicação, cada etapa é pensada para apresentar o seu negócio com consistência.</p>
+    </div>
+    <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand/15 text-[#8aa0ff]"><i class="ph-bold ph-layout text-2xl"></i></span><h3 class="mt-6 text-xl font-bold">Landing Page</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Página direcionada para campanhas, serviços, lançamentos ou captação de contatos.</p></article>
+      <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand/15 text-[#8aa0ff]"><i class="ph-bold ph-pen-nib text-2xl"></i></span><h3 class="mt-6 text-xl font-bold">Estrutura e copy</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Organização das informações para uma leitura clara, objetiva e persuasiva.</p></article>
+      <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand/15 text-[#8aa0ff]"><i class="ph-bold ph-code text-2xl"></i></span><h3 class="mt-6 text-xl font-bold">Desenvolvimento</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Implementação responsiva com atenção à velocidade, acessibilidade e estabilidade.</p></article>
+      <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand/15 text-[#8aa0ff]"><i class="ph-bold ph-cloud-arrow-up text-2xl"></i></span><h3 class="mt-6 text-xl font-bold">Publicação</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Configuração para colocar a página no ar e pronta para receber visitantes.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio" class="py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
+      <div class="max-w-3xl"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">Portfólio</p><h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Projetos recentes.</h2><p class="mt-5 text-lg text-zinc-600">Páginas criadas para diferentes segmentos, com identidade própria e foco em uma navegação direta.</p></div>
+      <div class="flex w-full items-center justify-between gap-3 lg:w-auto lg:justify-end">
+        <p class="text-sm text-zinc-500 lg:hidden">Arraste para o lado</p>
+        <div class="flex items-center gap-3">
+          <button id="prevProject" type="button" class="grid h-11 w-11 place-items-center rounded-full border border-zinc-200 text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-50" aria-label="Projeto anterior"><i class="ph-bold ph-arrow-left"></i></button>
+          <button id="nextProject" type="button" class="grid h-11 w-11 place-items-center rounded-full border border-zinc-200 text-zinc-700 transition hover:border-zinc-300 hover:bg-zinc-50" aria-label="Próximo projeto"><i class="ph-bold ph-arrow-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolioCarousel" class="hide-scrollbar mt-12 flex snap-x snap-mandatory gap-7 overflow-x-auto scroll-smooth pb-4">
+      <a href="https://paiva-baptista.vercel.app/" target="_blank" rel="noopener" class="project-card reveal group min-w-[88%] snap-start overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm hover:shadow-card sm:min-w-[72%] lg:min-w-[52%]">
+        <div class="overflow-hidden bg-zinc-100"><img src="https://image.thum.io/get/wait/5/width/2200/crop/1200/noanimate/https://paiva-baptista.vercel.app/" alt="Site Paiva & Baptista Advogados" class="project-shot aspect-[16/10] w-full object-cover object-top" loading="eager" decoding="async" /></div>
+        <div class="p-7 sm:p-8"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Projeto mais recente</p><h3 class="mt-2 font-display text-2xl font-bold sm:text-3xl">Paiva & Baptista Advogados</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div><p class="mt-4 leading-7 text-zinc-600">Site institucional para escritório de advocacia trabalhista e previdenciária, com apresentação da equipe, áreas de atuação, FAQ e contatos estratégicos.</p><div class="mt-6 flex flex-wrap gap-2 text-xs font-semibold text-zinc-500"><span class="rounded-full border border-zinc-200 px-3 py-1.5">Advocacia</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Institucional</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Responsivo</span></div></div>
+      </a>
+
+      <a href="https://rainbowclass-ten.vercel.app/" target="_blank" rel="noopener" class="project-card reveal group min-w-[88%] snap-start overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm hover:shadow-card sm:min-w-[72%] lg:min-w-[40%]">
+        <div class="overflow-hidden bg-zinc-100"><img src="https://image.thum.io/get/width/1400/crop/900/noanimate/https://rainbowclass-ten.vercel.app/" alt="Site Rainbow Class" class="project-shot aspect-[16/10] w-full object-cover object-top" loading="lazy" decoding="async" /></div>
+        <div class="p-7"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Educação</p><h3 class="mt-2 font-display text-2xl font-bold">Rainbow Class</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 group-hover:text-brand"></i></div><p class="mt-3 text-sm leading-7 text-zinc-600">Página para escola de idiomas e experiência educacional.</p></div>
+      </a>
+
+      <a href="https://cefisfisioterapia.vercel.app/" target="_blank" rel="noopener" class="project-card reveal group min-w-[88%] snap-start overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm hover:shadow-card sm:min-w-[72%] lg:min-w-[40%]">
+        <div class="overflow-hidden bg-zinc-100"><img src="https://image.thum.io/get/width/1400/crop/900/noanimate/https://cefisfisioterapia.vercel.app/" alt="Site Cefis Fisioterapia" class="project-shot aspect-[16/10] w-full object-cover object-top" loading="lazy" decoding="async" /></div>
+        <div class="p-7"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Saúde</p><h3 class="mt-2 font-display text-2xl font-bold">Cefis Fisioterapia</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 group-hover:text-brand"></i></div><p class="mt-3 text-sm leading-7 text-zinc-600">Site profissional para clínica, com serviços e contato facilitado.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section id="processo" class="bg-zinc-100 py-20 sm:py-28">
+  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal mx-auto max-w-3xl text-center"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">Como funciona</p><h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Um processo simples, do briefing ao lançamento.</h2></div>
+    <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
+      <div class="reveal rounded-3xl bg-white p-7 shadow-sm"><span class="font-display text-4xl font-bold text-brand/25">01</span><h3 class="mt-6 text-xl font-bold">Briefing</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Entendo o negócio, o público e o objetivo principal da página.</p></div>
+      <div class="reveal rounded-3xl bg-white p-7 shadow-sm"><span class="font-display text-4xl font-bold text-brand/25">02</span><h3 class="mt-6 text-xl font-bold">Estrutura</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Organizo seções, conteúdo e hierarquia da informação.</p></div>
+      <div class="reveal rounded-3xl bg-white p-7 shadow-sm"><span class="font-display text-4xl font-bold text-brand/25">03</span><h3 class="mt-6 text-xl font-bold">Desenvolvimento</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Construo a página e ajusto a experiência para web e mobile.</p></div>
+      <div class="reveal rounded-3xl bg-white p-7 shadow-sm"><span class="font-display text-4xl font-bold text-brand/25">04</span><h3 class="mt-6 text-xl font-bold">Publicação</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Após a revisão, a página é publicada e entregue pronta para uso.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="py-20 sm:py-28">
+  <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal text-center"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">FAQ</p><h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Dúvidas frequentes.</h2></div>
+    <div class="mt-12 space-y-3">
+      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">Quanto tempo leva para a página ficar pronta?</span><i class="faq-icon ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">O prazo depende do tamanho do projeto e da disponibilidade dos materiais. Após o briefing, o cronograma é definido com clareza antes do início.</p></div></div>
+      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">A página funciona bem no celular?</span><i class="faq-icon ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">Sim. O projeto é construído com abordagem mobile-first e testado em diferentes larguras de tela.</p></div></div>
+      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">Preciso fornecer todo o texto?</span><i class="faq-icon ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">Você fornece as informações essenciais do negócio. A organização e a adaptação do conteúdo para a página fazem parte do processo.</p></div></div>
+      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">O site pode usar domínio próprio?</span><i class="faq-icon ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">Sim. A página pode ser publicada em um domínio próprio, conforme a configuração escolhida para o projeto.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="px-4 pb-6 sm:px-6 lg:px-8">
+  <div class="noise relative mx-auto max-w-7xl overflow-hidden rounded-[32px] bg-ink px-6 py-16 text-center text-white sm:px-10 sm:py-20">
+    <div class="absolute inset-0 grid-bg opacity-50"></div><div class="absolute left-1/2 top-0 h-64 w-96 -translate-x-1/2 rounded-full bg-brand/30 blur-[110px]"></div>
+    <div class="relative mx-auto max-w-3xl"><p class="text-sm font-bold uppercase tracking-[.2em] text-[#8aa0ff]">Próximo projeto</p><h2 class="mt-4 font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Vamos transformar sua ideia em uma página profissional?</h2><p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">Envie uma mensagem com o tipo de negócio e o objetivo da página. A partir disso, alinhamos a melhor estrutura para o projeto.</p><a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20um%20novo%20site." target="_blank" rel="noopener" class="mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-semibold text-white hover:brightness-110"><i class="ph-fill ph-whatsapp-logo text-xl"></i> Conversar sobre meu projeto</a></div>
+  </div>
+</section>
+</main>
+
+<footer class="bg-white py-10">
+  <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-4 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
+    <div><p class="font-display text-lg font-bold">Eduardo Simionato</p><p class="text-xs text-zinc-500">Landing pages e sites profissionais</p></div>
+    <p class="text-sm text-zinc-500">© 2026 Eduardo Simionato. Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" aria-label="Falar com Eduardo no WhatsApp" class="fixed bottom-4 right-4 z-40 grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-white shadow-2xl transition hover:scale-105 sm:bottom-6 sm:right-6"><i class="ph-fill ph-whatsapp-logo text-3xl"></i></a>
+
+<script>
+  const menuBtn = document.getElementById('menuBtn');
+  const mobileMenu = document.getElementById('mobileMenu');
+  menuBtn.addEventListener('click', () => {
+    const open = mobileMenu.classList.toggle('hidden') === false;
+    menuBtn.setAttribute('aria-expanded', open);
+    menuBtn.innerHTML = open ? '<i class="ph ph-x text-2xl"></i>' : '<i class="ph ph-list text-2xl"></i>';
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.innerHTML = '<i class="ph ph-list text-2xl"></i>';
+  }));
+  document.querySelectorAll('.faq-btn').forEach(btn => btn.addEventListener('click', () => {
+    const item = btn.closest('.faq-item');
+    document.querySelectorAll('.faq-item').forEach(other => { if (other !== item) other.classList.remove('open'); });
+    item.classList.toggle('open');
+  }));
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .12 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  const carousel = document.getElementById('portfolioCarousel');
+  const prevProject = document.getElementById('prevProject');
+  const nextProject = document.getElementById('nextProject');
+
+  if (carousel && prevProject && nextProject) {
+    const getStep = () => {
+      const firstCard = carousel.querySelector('a');
+      const styles = window.getComputedStyle(carousel);
+      const gap = parseInt(styles.columnGap || styles.gap || 28, 10) || 28;
+      return (firstCard ? firstCard.getBoundingClientRect().width : carousel.clientWidth * 0.9) + gap;
+    };
+
+    prevProject.addEventListener('click', () => carousel.scrollBy({ left: -getStep(), behavior: 'smooth' }));
+    nextProject.addEventListener('click', () => carousel.scrollBy({ left: getStep(), behavior: 'smooth' }));
+  }
+</script>
+</body>
+</html>
