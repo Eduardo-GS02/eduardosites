@@ -41,6 +41,9 @@
     body { width:100%; max-width:100%; overflow-x:hidden; overscroll-behavior-x:none; font-family: Inter, sans-serif; }
     main, header, footer, section { max-width:100%; }
     img { max-width:100%; }
+    .wpp-icon-chip { display:inline-flex; width:1.45rem; height:1.45rem; flex:0 0 1.45rem; align-items:center; justify-content:center; overflow:hidden; border-radius:999px; background:#fff; }
+    .wpp-icon-chip img { width:1.05rem; height:1.05rem; object-fit:contain; display:block; }
+    .wpp-floating-image { width:100%; height:100%; object-fit:contain; display:block; }
     h1,h2,h3,.font-display { font-family: 'Space Grotesk', sans-serif; }
     .grid-bg {
       background-image: linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
@@ -112,7 +115,7 @@
       <a href="#portfolio" class="text-sm text-zinc-400 hover:text-white">Portfólio</a>
       <a href="#processo" class="text-sm text-zinc-400 hover:text-white">Processo</a>
       <a href="#faq" class="text-sm text-zinc-400 hover:text-white">FAQ</a>
-      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white hover:brightness-110"><i class="ph-fill ph-whatsapp-logo shrink-0 text-[1.15em] leading-none" aria-hidden="true"></i> Solicitar orçamento</a>
+      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white hover:brightness-110"><span class="wpp-icon-chip" aria-hidden="true"><img src="wppsemfundo.png" alt="" /></span> Solicitar orçamento</a>
     </nav>
 
     <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-xl border border-white/10 text-white lg:hidden" aria-label="Abrir menu" aria-expanded="false"><i class="ph ph-list text-2xl"></i></button>
@@ -124,7 +127,7 @@
       <a href="#portfolio" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Portfólio</a>
       <a href="#processo" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Processo</a>
       <a href="#faq" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">FAQ</a>
-      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-semibold text-white"><i class="ph-fill ph-whatsapp-logo shrink-0 text-[1.15em] leading-none" aria-hidden="true"></i> Falar no WhatsApp</a>
+      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-semibold text-white"><span class="wpp-icon-chip" aria-hidden="true"><img src="wppsemfundo.png" alt="" /></span> Falar no WhatsApp</a>
     </nav>
   </div>
 </header>
@@ -148,7 +151,7 @@
         Crio sites rápidos, responsivos e visualmente profissionais para apresentar seu negócio com clareza e conduzir o cliente até o WhatsApp.
       </p>
       <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-        <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento%20para%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-4 font-semibold text-white shadow-lg shadow-whatsapp/20 hover:-translate-y-0.5 hover:brightness-110"><i class="ph-fill ph-whatsapp-logo shrink-0 text-[1.15em] leading-none" aria-hidden="true"></i> Solicitar orçamento</a>
+        <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento%20para%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-4 font-semibold text-white shadow-lg shadow-whatsapp/20 hover:-translate-y-0.5 hover:brightness-110"><span class="wpp-icon-chip" aria-hidden="true"><img src="wppsemfundo.png" alt="" /></span> Solicitar orçamento</a>
         <a href="#portfolio" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-4 font-semibold text-white hover:bg-white/10">Ver projetos <i class="ph-bold ph-arrow-down"></i></a>
       </div>
       <div class="mt-9 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-zinc-400 lg:justify-start">
@@ -321,7 +324,7 @@
 <section class="px-4 pb-6 sm:px-6 lg:px-8">
   <div class="noise relative mx-auto max-w-7xl overflow-hidden rounded-[32px] bg-ink px-6 py-16 text-center text-white sm:px-10 sm:py-20">
     <div class="absolute inset-0 grid-bg opacity-50"></div><div class="absolute left-1/2 top-0 h-64 w-96 -translate-x-1/2 rounded-full bg-brand/30 blur-[110px]"></div>
-    <div class="relative mx-auto max-w-3xl"><p class="text-sm font-bold uppercase tracking-[.2em] text-[#8aa0ff]">Próximo projeto</p><h2 class="mt-4 font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Vamos transformar sua ideia em uma página profissional?</h2><p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">Envie uma mensagem com o tipo de negócio e o objetivo da página. A partir disso, alinhamos a melhor estrutura para o projeto.</p><a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20um%20novo%20site." target="_blank" rel="noopener" class="mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-semibold text-white hover:brightness-110"><i class="ph-fill ph-whatsapp-logo shrink-0 text-[1.15em] leading-none" aria-hidden="true"></i> Conversar sobre meu projeto</a></div>
+    <div class="relative mx-auto max-w-3xl"><p class="text-sm font-bold uppercase tracking-[.2em] text-[#8aa0ff]">Próximo projeto</p><h2 class="mt-4 font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Vamos transformar sua ideia em uma página profissional?</h2><p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">Envie uma mensagem com o tipo de negócio e o objetivo da página. A partir disso, alinhamos a melhor estrutura para o projeto.</p><a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20um%20novo%20site." target="_blank" rel="noopener" class="mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-semibold text-white hover:brightness-110"><span class="wpp-icon-chip" aria-hidden="true"><img src="wppsemfundo.png" alt="" /></span> Conversar sobre meu projeto</a></div>
   </div>
 </section>
 </main>
@@ -333,7 +336,7 @@
   </div>
 </footer>
 
-<a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" aria-label="Falar com Eduardo no WhatsApp" class="fixed bottom-4 right-4 z-40 flex h-14 w-14 items-center justify-center rounded-full bg-whatsapp text-white shadow-2xl transition hover:scale-105 sm:bottom-6 sm:right-6"><i class="ph-fill ph-whatsapp-logo text-[30px] leading-none" aria-hidden="true"></i></a>
+<a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" aria-label="Falar com Eduardo no WhatsApp" class="fixed bottom-4 right-4 z-40 h-14 w-14 overflow-hidden rounded-full shadow-2xl transition hover:scale-105 sm:bottom-6 sm:right-6"><img src="wppcomfundo.png" alt="" class="wpp-floating-image" /></a>
 
 <script>
   const menuBtn = document.getElementById('menuBtn');
