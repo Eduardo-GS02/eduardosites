@@ -48,8 +48,30 @@
     }
     .noise:after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.035; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E"); }
     .project-shot { transition: transform .7s cubic-bezier(.2,.8,.2,1); }
-    .site-preview { position:relative; overflow:hidden; background:#f4f4f5; }
-    .site-preview iframe { position:absolute; width:1600px !important; min-width:1600px; max-width:none !important; height:1000px !important; border:0; pointer-events:none; transform-origin:top left; }
+    .site-preview { position:relative; overflow:hidden; background:#f5f0e8; }
+    .paiva-mock { position:absolute; inset:0; display:flex; flex-direction:column; background:linear-gradient(135deg,#fffdf9 0%,#f8f0e5 52%,#f3eadf 100%); color:#1f2937; }
+    .paiva-mock__nav { height:11%; min-height:32px; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:0 4%; border-bottom:1px solid rgba(31,63,94,.12); background:rgba(255,255,255,.82); }
+    .paiva-mock__brand { font-family:Georgia,serif; font-size:clamp(8px,1.15vw,18px); line-height:1; color:#172b3f; white-space:nowrap; }
+    .paiva-mock__brand small { display:block; margin-top:3px; font-family:Inter,sans-serif; font-size:.46em; letter-spacing:.32em; text-align:center; color:#8b6d45; }
+    .paiva-mock__links { display:flex; align-items:center; gap:clamp(5px,1vw,16px); font-size:clamp(5px,.52vw,9px); color:#4b5563; white-space:nowrap; }
+    .paiva-mock__cta { border-radius:999px; background:#22c55e; color:#fff; padding:.55em 1em; font-weight:700; }
+    .paiva-mock__hero { flex:1; display:grid; grid-template-columns:1.25fr .75fr; align-items:center; gap:5%; padding:5% 8%; overflow:hidden; }
+    .paiva-mock__eyebrow { font-size:clamp(5px,.58vw,10px); font-weight:800; letter-spacing:.18em; color:#264367; text-transform:uppercase; }
+    .paiva-mock__title { margin-top:3%; max-width:11ch; font-family:Georgia,serif; font-size:clamp(19px,3.25vw,56px); line-height:.98; color:#18181b; }
+    .paiva-mock__copy { margin-top:4%; max-width:42ch; font-size:clamp(6px,.72vw,12px); line-height:1.55; color:#6b7280; }
+    .paiva-mock__actions { display:flex; gap:2.5%; margin-top:5%; }
+    .paiva-mock__button { border:1px solid #ddd6cc; border-radius:7px; padding:2.2% 4%; font-size:clamp(5px,.58vw,10px); font-weight:700; background:#fff; }
+    .paiva-mock__button--primary { border-color:#22c55e; background:#22c55e; color:#fff; }
+    .paiva-mock__lawyer { position:relative; min-height:72%; border-radius:34% 34% 18px 18px; background:linear-gradient(180deg,#294b6b,#132d47); box-shadow:0 18px 45px rgba(31,63,94,.22); display:grid; place-items:center; color:#c6a573; }
+    .paiva-mock__initials { font-family:Georgia,serif; font-size:clamp(28px,5vw,82px); }
+    .paiva-mock__lawyer-name { position:absolute; left:10%; right:10%; bottom:15%; text-align:center; color:#fff; font-size:clamp(6px,.72vw,12px); font-weight:700; }
+    .paiva-mock__badge { position:absolute; left:-10%; top:18%; border-radius:8px; background:#fff; padding:5% 7%; box-shadow:0 8px 24px rgba(0,0,0,.13); font-size:clamp(5px,.58vw,10px); font-weight:700; color:#1f2937; white-space:nowrap; }
+    @media (max-width:640px) {
+      .paiva-mock__links span:not(.paiva-mock__cta) { display:none; }
+      .paiva-mock__hero { grid-template-columns:1.1fr .9fr; padding:6% 5%; }
+      .paiva-mock__title { font-size:clamp(17px,6vw,30px); }
+      .paiva-mock__copy { font-size:clamp(6px,1.8vw,9px); }
+    }
     .project-card:hover .project-shot { transform: scale(1.045); }
     .reveal { opacity:0; transform:translateY(22px); transition:opacity .7s ease,transform .7s ease; }
     .reveal.visible { opacity:1; transform:none; }
@@ -90,7 +112,7 @@
       <a href="#portfolio" class="text-sm text-zinc-400 hover:text-white">Portfólio</a>
       <a href="#processo" class="text-sm text-zinc-400 hover:text-white">Processo</a>
       <a href="#faq" class="text-sm text-zinc-400 hover:text-white">FAQ</a>
-      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white hover:brightness-110"><i class="ph-fill ph-whatsapp-logo text-lg"></i> Solicitar orçamento</a>
+      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white hover:brightness-110"><svg viewBox="0 0 32 32" aria-hidden="true" class="h-[1em] w-[1em] shrink-0 fill-current"><path d="M19.11 17.205c-.372-.186-2.197-1.083-2.537-1.207-.341-.124-.589-.186-.837.186-.248.372-.961 1.207-1.178 1.455-.217.248-.434.279-.806.093-.372-.186-1.57-.579-2.99-1.846-1.105-.985-1.851-2.202-2.068-2.574-.217-.372-.023-.573.163-.758.167-.166.372-.434.558-.651.186-.217.248-.372.372-.62.124-.248.062-.465-.031-.651-.093-.186-.837-2.016-1.147-2.76-.302-.724-.609-.626-.837-.638-.217-.011-.465-.013-.713-.013s-.651.093-.992.465c-.341.372-1.302 1.271-1.302 3.101s1.333 3.597 1.519 3.845c.186.248 2.623 4.005 6.354 5.617.887.383 1.579.612 2.119.783.89.283 1.7.243 2.34.147.714-.107 2.197-.899 2.506-1.767.31-.868.31-1.612.217-1.767-.093-.155-.341-.248-.713-.434z"/><path d="M16.027 3C8.846 3 3 8.746 3 15.81c0 2.253.598 4.451 1.734 6.383L3 29l7.02-1.81a13.1 13.1 0 0 0 6.004 1.451h.006C23.209 28.641 29 22.895 29 15.83 29 8.765 23.208 3 16.027 3zm0 23.477h-.005a10.94 10.94 0 0 1-5.58-1.514l-.4-.235-4.166 1.075 1.112-4.002-.261-.41a10.56 10.56 0 0 1-1.648-5.58c0-5.878 4.91-10.66 10.951-10.66 2.925 0 5.674 1.116 7.742 3.143 2.068 2.027 3.207 4.722 3.206 7.59-.002 5.878-4.91 10.593-10.951 10.593z"/></svg> Solicitar orçamento</a>
     </nav>
 
     <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-xl border border-white/10 text-white lg:hidden" aria-label="Abrir menu" aria-expanded="false"><i class="ph ph-list text-2xl"></i></button>
@@ -102,7 +124,7 @@
       <a href="#portfolio" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Portfólio</a>
       <a href="#processo" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Processo</a>
       <a href="#faq" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">FAQ</a>
-      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-semibold text-white"><i class="ph-fill ph-whatsapp-logo text-xl"></i> Falar no WhatsApp</a>
+      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-semibold text-white"><svg viewBox="0 0 32 32" aria-hidden="true" class="h-[1em] w-[1em] shrink-0 fill-current"><path d="M19.11 17.205c-.372-.186-2.197-1.083-2.537-1.207-.341-.124-.589-.186-.837.186-.248.372-.961 1.207-1.178 1.455-.217.248-.434.279-.806.093-.372-.186-1.57-.579-2.99-1.846-1.105-.985-1.851-2.202-2.068-2.574-.217-.372-.023-.573.163-.758.167-.166.372-.434.558-.651.186-.217.248-.372.372-.62.124-.248.062-.465-.031-.651-.093-.186-.837-2.016-1.147-2.76-.302-.724-.609-.626-.837-.638-.217-.011-.465-.013-.713-.013s-.651.093-.992.465c-.341.372-1.302 1.271-1.302 3.101s1.333 3.597 1.519 3.845c.186.248 2.623 4.005 6.354 5.617.887.383 1.579.612 2.119.783.89.283 1.7.243 2.34.147.714-.107 2.197-.899 2.506-1.767.31-.868.31-1.612.217-1.767-.093-.155-.341-.248-.713-.434z"/><path d="M16.027 3C8.846 3 3 8.746 3 15.81c0 2.253.598 4.451 1.734 6.383L3 29l7.02-1.81a13.1 13.1 0 0 0 6.004 1.451h.006C23.209 28.641 29 22.895 29 15.83 29 8.765 23.208 3 16.027 3zm0 23.477h-.005a10.94 10.94 0 0 1-5.58-1.514l-.4-.235-4.166 1.075 1.112-4.002-.261-.41a10.56 10.56 0 0 1-1.648-5.58c0-5.878 4.91-10.66 10.951-10.66 2.925 0 5.674 1.116 7.742 3.143 2.068 2.027 3.207 4.722 3.206 7.59-.002 5.878-4.91 10.593-10.951 10.593z"/></svg> Falar no WhatsApp</a>
     </nav>
   </div>
 </header>
@@ -126,7 +148,7 @@
         Crio sites rápidos, responsivos e visualmente profissionais para apresentar seu negócio com clareza e conduzir o cliente até o WhatsApp.
       </p>
       <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-        <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento%20para%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-4 font-semibold text-white shadow-lg shadow-whatsapp/20 hover:-translate-y-0.5 hover:brightness-110"><i class="ph-fill ph-whatsapp-logo text-xl"></i> Solicitar orçamento</a>
+        <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento%20para%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-4 font-semibold text-white shadow-lg shadow-whatsapp/20 hover:-translate-y-0.5 hover:brightness-110"><svg viewBox="0 0 32 32" aria-hidden="true" class="h-[1em] w-[1em] shrink-0 fill-current"><path d="M19.11 17.205c-.372-.186-2.197-1.083-2.537-1.207-.341-.124-.589-.186-.837.186-.248.372-.961 1.207-1.178 1.455-.217.248-.434.279-.806.093-.372-.186-1.57-.579-2.99-1.846-1.105-.985-1.851-2.202-2.068-2.574-.217-.372-.023-.573.163-.758.167-.166.372-.434.558-.651.186-.217.248-.372.372-.62.124-.248.062-.465-.031-.651-.093-.186-.837-2.016-1.147-2.76-.302-.724-.609-.626-.837-.638-.217-.011-.465-.013-.713-.013s-.651.093-.992.465c-.341.372-1.302 1.271-1.302 3.101s1.333 3.597 1.519 3.845c.186.248 2.623 4.005 6.354 5.617.887.383 1.579.612 2.119.783.89.283 1.7.243 2.34.147.714-.107 2.197-.899 2.506-1.767.31-.868.31-1.612.217-1.767-.093-.155-.341-.248-.713-.434z"/><path d="M16.027 3C8.846 3 3 8.746 3 15.81c0 2.253.598 4.451 1.734 6.383L3 29l7.02-1.81a13.1 13.1 0 0 0 6.004 1.451h.006C23.209 28.641 29 22.895 29 15.83 29 8.765 23.208 3 16.027 3zm0 23.477h-.005a10.94 10.94 0 0 1-5.58-1.514l-.4-.235-4.166 1.075 1.112-4.002-.261-.41a10.56 10.56 0 0 1-1.648-5.58c0-5.878 4.91-10.66 10.951-10.66 2.925 0 5.674 1.116 7.742 3.143 2.068 2.027 3.207 4.722 3.206 7.59-.002 5.878-4.91 10.593-10.951 10.593z"/></svg> Solicitar orçamento</a>
         <a href="#portfolio" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-4 font-semibold text-white hover:bg-white/10">Ver projetos <i class="ph-bold ph-arrow-down"></i></a>
       </div>
       <div class="mt-9 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-zinc-400 lg:justify-start">
@@ -144,8 +166,22 @@
             <span class="h-2.5 w-2.5 rounded-full bg-red-400"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-400"></span><span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
             <span class="ml-3 truncate text-xs text-zinc-500">paiva-baptista.vercel.app</span>
           </div>
-          <div class="site-preview aspect-[16/10] w-full" data-site-preview>
-            <iframe src="https://paiva-baptista.vercel.app/" title="Prévia do projeto Paiva & Baptista Advogados" loading="eager" tabindex="-1" aria-hidden="true"></iframe>
+          <div class="site-preview aspect-[16/10] w-full">
+            <div class="paiva-mock" aria-label="Prévia visual do projeto Paiva & Baptista Advogados">
+              <div class="paiva-mock__nav">
+                <div class="paiva-mock__brand">PAIVA &amp; BAPTISTA<small>ADVOGADOS</small></div>
+                <div class="paiva-mock__links"><span>Áreas de atuação</span><span>Diferenciais</span><span>Como funciona</span><span>Equipe</span><span>Dúvidas</span><span class="paiva-mock__cta">WhatsApp</span></div>
+              </div>
+              <div class="paiva-mock__hero">
+                <div>
+                  <div class="paiva-mock__eyebrow">Advocacia trabalhista e previdenciária</div>
+                  <div class="paiva-mock__title">Orientação jurídica clara para proteger seus direitos.</div>
+                  <div class="paiva-mock__copy">Atendimento para trabalhadores e segurados do INSS que precisam compreender sua situação e identificar caminhos juridicamente possíveis.</div>
+                  <div class="paiva-mock__actions"><span class="paiva-mock__button paiva-mock__button--primary">Falar com a equipe</span><span class="paiva-mock__button">Conhecer áreas de atuação</span></div>
+                </div>
+                <div class="paiva-mock__lawyer"><div class="paiva-mock__badge">Equipe jurídica<br><small>3 advogados</small></div><div class="paiva-mock__initials">VB</div><div class="paiva-mock__lawyer-name">Venâncio Superbia Baptista</div></div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -232,7 +268,7 @@
       </div>
       <div id="portfolioCarousel" class="portfolio-track hide-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-5 pr-8 sm:gap-6 sm:pr-0" tabindex="0" aria-label="Carrossel de projetos">
         <a href="https://paiva-baptista.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media border-b border-zinc-100"><div class="site-preview h-full w-full" data-site-preview><iframe src="https://paiva-baptista.vercel.app/" title="Prévia do site Paiva & Baptista Advogados" loading="eager" tabindex="-1" aria-hidden="true"></iframe></div></div>
+          <div class="portfolio-media border-b border-zinc-100"><div class="site-preview h-full w-full"><div class="paiva-mock" aria-label="Prévia visual do projeto Paiva & Baptista Advogados"><div class="paiva-mock__nav"><div class="paiva-mock__brand">PAIVA &amp; BAPTISTA<small>ADVOGADOS</small></div><div class="paiva-mock__links"><span>Áreas</span><span>Diferenciais</span><span>Equipe</span><span class="paiva-mock__cta">WhatsApp</span></div></div><div class="paiva-mock__hero"><div><div class="paiva-mock__eyebrow">Advocacia trabalhista e previdenciária</div><div class="paiva-mock__title">Orientação jurídica clara para proteger seus direitos.</div><div class="paiva-mock__copy">Atendimento claro, individual e focado na melhor orientação jurídica.</div><div class="paiva-mock__actions"><span class="paiva-mock__button paiva-mock__button--primary">Falar com a equipe</span><span class="paiva-mock__button">Áreas de atuação</span></div></div><div class="paiva-mock__lawyer"><div class="paiva-mock__badge">Equipe jurídica<br><small>3 advogados</small></div><div class="paiva-mock__initials">VB</div><div class="paiva-mock__lawyer-name">Venâncio Superbia Baptista</div></div></div></div></div></div>
           <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7">
             <div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Projeto mais recente</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Paiva & Baptista Advogados</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div>
             <p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Site institucional para escritório de advocacia trabalhista e previdenciária, com apresentação da equipe, áreas de atuação, FAQ e contatos estratégicos.</p>
@@ -285,7 +321,7 @@
 <section class="px-4 pb-6 sm:px-6 lg:px-8">
   <div class="noise relative mx-auto max-w-7xl overflow-hidden rounded-[32px] bg-ink px-6 py-16 text-center text-white sm:px-10 sm:py-20">
     <div class="absolute inset-0 grid-bg opacity-50"></div><div class="absolute left-1/2 top-0 h-64 w-96 -translate-x-1/2 rounded-full bg-brand/30 blur-[110px]"></div>
-    <div class="relative mx-auto max-w-3xl"><p class="text-sm font-bold uppercase tracking-[.2em] text-[#8aa0ff]">Próximo projeto</p><h2 class="mt-4 font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Vamos transformar sua ideia em uma página profissional?</h2><p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">Envie uma mensagem com o tipo de negócio e o objetivo da página. A partir disso, alinhamos a melhor estrutura para o projeto.</p><a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20um%20novo%20site." target="_blank" rel="noopener" class="mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-semibold text-white hover:brightness-110"><i class="ph-fill ph-whatsapp-logo text-xl"></i> Conversar sobre meu projeto</a></div>
+    <div class="relative mx-auto max-w-3xl"><p class="text-sm font-bold uppercase tracking-[.2em] text-[#8aa0ff]">Próximo projeto</p><h2 class="mt-4 font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Vamos transformar sua ideia em uma página profissional?</h2><p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">Envie uma mensagem com o tipo de negócio e o objetivo da página. A partir disso, alinhamos a melhor estrutura para o projeto.</p><a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20um%20novo%20site." target="_blank" rel="noopener" class="mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-semibold text-white hover:brightness-110"><svg viewBox="0 0 32 32" aria-hidden="true" class="h-[1em] w-[1em] shrink-0 fill-current"><path d="M19.11 17.205c-.372-.186-2.197-1.083-2.537-1.207-.341-.124-.589-.186-.837.186-.248.372-.961 1.207-1.178 1.455-.217.248-.434.279-.806.093-.372-.186-1.57-.579-2.99-1.846-1.105-.985-1.851-2.202-2.068-2.574-.217-.372-.023-.573.163-.758.167-.166.372-.434.558-.651.186-.217.248-.372.372-.62.124-.248.062-.465-.031-.651-.093-.186-.837-2.016-1.147-2.76-.302-.724-.609-.626-.837-.638-.217-.011-.465-.013-.713-.013s-.651.093-.992.465c-.341.372-1.302 1.271-1.302 3.101s1.333 3.597 1.519 3.845c.186.248 2.623 4.005 6.354 5.617.887.383 1.579.612 2.119.783.89.283 1.7.243 2.34.147.714-.107 2.197-.899 2.506-1.767.31-.868.31-1.612.217-1.767-.093-.155-.341-.248-.713-.434z"/><path d="M16.027 3C8.846 3 3 8.746 3 15.81c0 2.253.598 4.451 1.734 6.383L3 29l7.02-1.81a13.1 13.1 0 0 0 6.004 1.451h.006C23.209 28.641 29 22.895 29 15.83 29 8.765 23.208 3 16.027 3zm0 23.477h-.005a10.94 10.94 0 0 1-5.58-1.514l-.4-.235-4.166 1.075 1.112-4.002-.261-.41a10.56 10.56 0 0 1-1.648-5.58c0-5.878 4.91-10.66 10.951-10.66 2.925 0 5.674 1.116 7.742 3.143 2.068 2.027 3.207 4.722 3.206 7.59-.002 5.878-4.91 10.593-10.951 10.593z"/></svg> Conversar sobre meu projeto</a></div>
   </div>
 </section>
 </main>
@@ -297,7 +333,7 @@
   </div>
 </footer>
 
-<a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" aria-label="Falar com Eduardo no WhatsApp" class="fixed bottom-4 right-4 z-40 grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-white shadow-2xl transition hover:scale-105 sm:bottom-6 sm:right-6"><i class="ph-fill ph-whatsapp-logo text-3xl"></i></a>
+<a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" aria-label="Falar com Eduardo no WhatsApp" class="fixed bottom-4 right-4 z-40 grid h-14 w-14 place-items-center rounded-full bg-whatsapp text-white shadow-2xl transition hover:scale-105 sm:bottom-6 sm:right-6"><svg viewBox="0 0 32 32" aria-hidden="true" class="h-[1em] w-[1em] shrink-0 fill-current"><path d="M19.11 17.205c-.372-.186-2.197-1.083-2.537-1.207-.341-.124-.589-.186-.837.186-.248.372-.961 1.207-1.178 1.455-.217.248-.434.279-.806.093-.372-.186-1.57-.579-2.99-1.846-1.105-.985-1.851-2.202-2.068-2.574-.217-.372-.023-.573.163-.758.167-.166.372-.434.558-.651.186-.217.248-.372.372-.62.124-.248.062-.465-.031-.651-.093-.186-.837-2.016-1.147-2.76-.302-.724-.609-.626-.837-.638-.217-.011-.465-.013-.713-.013s-.651.093-.992.465c-.341.372-1.302 1.271-1.302 3.101s1.333 3.597 1.519 3.845c.186.248 2.623 4.005 6.354 5.617.887.383 1.579.612 2.119.783.89.283 1.7.243 2.34.147.714-.107 2.197-.899 2.506-1.767.31-.868.31-1.612.217-1.767-.093-.155-.341-.248-.713-.434z"/><path d="M16.027 3C8.846 3 3 8.746 3 15.81c0 2.253.598 4.451 1.734 6.383L3 29l7.02-1.81a13.1 13.1 0 0 0 6.004 1.451h.006C23.209 28.641 29 22.895 29 15.83 29 8.765 23.208 3 16.027 3zm0 23.477h-.005a10.94 10.94 0 0 1-5.58-1.514l-.4-.235-4.166 1.075 1.112-4.002-.261-.41a10.56 10.56 0 0 1-1.648-5.58c0-5.878 4.91-10.66 10.951-10.66 2.925 0 5.674 1.116 7.742 3.143 2.068 2.027 3.207 4.722 3.206 7.59-.002 5.878-4.91 10.593-10.951 10.593z"/></svg></a>
 
 <script>
   const menuBtn = document.getElementById('menuBtn');
@@ -323,22 +359,6 @@
   const nextProject = document.getElementById('nextProject');
   const portfolioCounter = document.getElementById('portfolioCounter');
   const portfolioDots = document.getElementById('portfolioDots');
-
-  document.querySelectorAll('[data-site-preview]').forEach(preview => {
-    const frame = preview.querySelector('iframe');
-    const baseWidth = 1600;
-    const baseHeight = 1000;
-    const fitPreview = () => {
-      const width = preview.clientWidth;
-      const height = preview.clientHeight;
-      const scale = Math.max(width / baseWidth, height / baseHeight);
-      frame.style.transform = `scale(${scale})`;
-      frame.style.left = `${(width - baseWidth * scale) / 2}px`;
-      frame.style.top = `${(height - baseHeight * scale) / 2}px`;
-    };
-    fitPreview();
-    new ResizeObserver(fitPreview).observe(preview);
-  });
 
   if (carousel && prevProject && nextProject) {
     const cards = [...carousel.querySelectorAll('[data-project]')];
