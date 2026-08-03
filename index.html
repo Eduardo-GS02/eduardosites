@@ -75,6 +75,31 @@
       .paiva-mock__title { font-size:clamp(17px,6vw,30px); }
       .paiva-mock__copy { font-size:clamp(6px,1.8vw,9px); }
     }
+
+    .rainbow-mock,.cefis-mock{height:100%;width:100%;position:relative;overflow:hidden;background:#fff}
+    .mock-nav{height:14%;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid #eee;font-size:clamp(6px,.62vw,10px);font-weight:700;color:#52525b}
+    .mock-links{display:flex;gap:1.2rem;align-items:center}.mock-pill{padding:.55em 1em;border-radius:999px;color:#fff;background:#22c55e}
+    .rainbow-mock{background:linear-gradient(135deg,#fff 0%,#fff7ff 48%,#effdfa 100%)}
+    .rainbow-mock__hero{height:86%;display:grid;grid-template-columns:1.05fr .95fr;gap:5%;align-items:center;padding:5% 7%}
+    .rainbow-mock__badge{display:inline-block;border-radius:999px;background:#fff;padding:.65em 1em;box-shadow:0 8px 24px rgba(0,0,0,.08);font-size:clamp(6px,.62vw,10px);color:#8b5cf6;font-weight:700}
+    .rainbow-mock__title{margin-top:5%;max-width:11ch;font-size:clamp(20px,3.3vw,50px);line-height:.98;font-weight:800;color:#1f2140}
+    .rainbow-mock__title span{background:linear-gradient(transparent 70%,#fde68a 0)}
+    .rainbow-mock__copy{margin-top:4%;max-width:40ch;font-size:clamp(6px,.72vw,12px);line-height:1.55;color:#6b7280}
+    .rainbow-mock__art{height:78%;border-radius:42% 34% 38% 30%;background:linear-gradient(135deg,#9ee8dc,#d8fff8);display:grid;place-items:center;position:relative}
+    .rainbow-mock__phone{width:54%;height:84%;border:7px solid #fff;border-radius:24px;background:linear-gradient(180deg,#fff,#fef3c7);box-shadow:0 18px 45px rgba(0,0,0,.15);transform:rotate(3deg)}
+    .rainbow-mock__phone:after{content:'ABC';display:grid;place-items:center;height:100%;font-weight:900;font-size:clamp(20px,3vw,44px);color:#ec4899}
+    .cefis-mock{background:linear-gradient(135deg,#15377d 0%,#173f91 55%,#1f4eb0 100%);color:white}
+    .cefis-mock .mock-nav{border-color:rgba(255,255,255,.16);color:#fff}
+    .cefis-mock__hero{height:86%;display:grid;grid-template-columns:1.05fr .95fr;gap:5%;align-items:center;padding:5% 7%}
+    .cefis-mock__eyebrow{font-size:clamp(6px,.62vw,10px);font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fde047}
+    .cefis-mock__title{margin-top:4%;max-width:12ch;font-size:clamp(20px,3.1vw,48px);line-height:1;font-weight:800}
+    .cefis-mock__copy{margin-top:4%;max-width:40ch;font-size:clamp(6px,.72vw,12px);line-height:1.55;color:#dbeafe}
+    .cefis-mock__cta{display:inline-block;margin-top:5%;padding:.8em 1.2em;border-radius:10px;background:#fde047;color:#17377f;font-size:clamp(6px,.65vw,11px);font-weight:800}
+    .cefis-mock__visual{height:78%;border-radius:28px;background:linear-gradient(160deg,#fff,#dbeafe);position:relative;overflow:hidden}
+    .cefis-mock__visual:before{content:'';position:absolute;inset:14% 18%;border-radius:50%;background:linear-gradient(135deg,#60a5fa,#1d4ed8);box-shadow:0 20px 50px rgba(0,0,0,.18)}
+    .cefis-mock__visual:after{content:'CEFIS';position:absolute;inset:0;display:grid;place-items:center;font-weight:900;font-size:clamp(20px,3vw,44px);color:#fff;letter-spacing:.08em}
+    @media(max-width:640px){.mock-links span:not(.mock-pill){display:none}.rainbow-mock__hero,.cefis-mock__hero{padding:6% 5%;grid-template-columns:1.08fr .92fr}.rainbow-mock__title,.cefis-mock__title{font-size:clamp(17px,6vw,29px)}}
+
     .project-card:hover .project-shot { transform: scale(1.045); }
     .reveal { opacity:0; transform:translateY(22px); transition:opacity .7s ease,transform .7s ease; }
     .reveal.visible { opacity:1; transform:none; }
@@ -280,12 +305,12 @@
         </a>
 
         <a href="https://rainbowclass-ten.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100"><img src="https://image.thum.io/get/width/1600/crop/1000/noanimate/wait/5/https://rainbowclass-ten.vercel.app/?portfolio_refresh=20260731-1705" alt="Site Rainbow Class" class="project-shot h-full w-full object-cover object-top" loading="lazy" decoding="async" /></div>
+          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100"><div class="rainbow-mock" aria-label="Prévia visual do projeto Rainbow Class"><div class="mock-nav"><strong>🌈 Rainbow Class</strong><div class="mock-links"><span>Sobre</span><span>Serviços</span><span>Diferenciais</span><span class="mock-pill">Falar com a professora</span></div></div><div class="rainbow-mock__hero"><div><span class="rainbow-mock__badge">Atendimento presencial e online</span><div class="rainbow-mock__title">Aprender pode ser <span>leve!</span></div><div class="rainbow-mock__copy">Reforço escolar personalizado, respeitando o ritmo e as necessidades de cada aluno.</div></div><div class="rainbow-mock__art"><div class="rainbow-mock__phone"></div></div></div></div></div>
           <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Educação</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Rainbow Class</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div><p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Página para escola de idiomas, criada para apresentar a proposta educacional com clareza e facilitar o contato.</p><div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-zinc-500"><span class="rounded-full border border-zinc-200 px-3 py-1.5">Educação</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Landing page</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Mobile-first</span></div></div>
         </a>
 
         <a href="https://cefisfisioterapia.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100"><img src="https://image.thum.io/get/width/1600/crop/1000/noanimate/wait/5/https://cefisfisioterapia.vercel.app/?portfolio_refresh=20260731-1705" alt="Site Cefis Fisioterapia" class="project-shot h-full w-full object-cover object-top" loading="lazy" decoding="async" /></div>
+          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100"><div class="cefis-mock" aria-label="Prévia visual do projeto Cefis Fisioterapia"><div class="mock-nav"><strong>CEFIS</strong><div class="mock-links"><span>Sobre</span><span>Serviços</span><span>Diferenciais</span><span class="mock-pill">Agendar avaliação</span></div></div><div class="cefis-mock__hero"><div><div class="cefis-mock__eyebrow">Saúde, movimento e qualidade de vida</div><div class="cefis-mock__title">Cuidado especializado para sua recuperação.</div><div class="cefis-mock__copy">Tratamentos personalizados em fisioterapia, com atendimento próximo e humanizado.</div><span class="cefis-mock__cta">Agendar atendimento</span></div><div class="cefis-mock__visual"></div></div></div></div>
           <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Saúde</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Cefis Fisioterapia</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div><p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Site profissional para clínica de fisioterapia, com apresentação dos serviços e acesso rápido aos canais de atendimento.</p><div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-zinc-500"><span class="rounded-full border border-zinc-200 px-3 py-1.5">Saúde</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Clínica</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Conversão</span></div></div>
         </a>
       </div>
