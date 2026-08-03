@@ -2,10 +2,10 @@
 <html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Landing pages rápidas, responsivas e focadas em conversão, desenvolvidas por Eduardo Simionato." />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <meta name="description" content="Landing pages estratégicas, rápidas e responsivas desenvolvidas por Eduardo Simionato." />
   <meta name="theme-color" content="#07070a" />
-  <title>Eduardo Simionato | Landing Pages que geram contatos</title>
+  <title>Eduardo Simionato — Landing Pages que chamam atenção</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,442 +20,414 @@
             ink: '#07070a',
             panel: '#111116',
             line: '#27272f',
-            brand: '#5b7cff',
-            brand2: '#7c3aed',
-            whatsapp: '#22c55e'
+            brand: '#6d7cff',
+            violet: '#9b6dff',
+            cyan: '#54d8ff',
+            whatsapp: '#25d366'
           },
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
             display: ['Space Grotesk', 'sans-serif']
           },
           boxShadow: {
-            glow: '0 0 80px rgba(91,124,255,.22)',
-            card: '0 18px 60px rgba(0,0,0,.14)'
+            glow: '0 0 90px rgba(109,124,255,.25)',
+            card: '0 24px 80px rgba(0,0,0,.16)'
           }
         }
       }
     }
   </script>
   <style>
-    html { width:100%; max-width:100%; overflow-x:hidden; overscroll-behavior-x:none; }
-    body { width:100%; max-width:100%; overflow-x:hidden; overscroll-behavior-x:none; font-family: Inter, sans-serif; }
-    main, header, footer, section { max-width:100%; }
-    img { max-width:100%; }
-    .wpp-icon-chip { display:inline-flex; width:1.45rem; height:1.45rem; flex:0 0 1.45rem; align-items:center; justify-content:center; overflow:hidden; border-radius:999px; background:#fff; }
-    .wpp-icon-chip img { width:1.05rem; height:1.05rem; object-fit:contain; display:block; }
-    .wpp-floating-image { width:100%; height:100%; object-fit:contain; display:block; }
-    h1,h2,h3,.font-display { font-family: 'Space Grotesk', sans-serif; }
-    .grid-bg {
-      background-image: linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
-      background-size: 34px 34px;
-    }
-    .noise:after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.035; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.6'/%3E%3C/svg%3E"); }
-    .project-shot { transition: transform .7s cubic-bezier(.2,.8,.2,1); }
-    .site-preview { position:relative; overflow:hidden; background:#f5f0e8; }
-    .paiva-mock { position:absolute; inset:0; display:flex; flex-direction:column; background:linear-gradient(135deg,#fffdf9 0%,#f8f0e5 52%,#f3eadf 100%); color:#1f2937; }
-    .paiva-mock__nav { height:11%; min-height:32px; display:flex; align-items:center; justify-content:space-between; gap:12px; padding:0 4%; border-bottom:1px solid rgba(31,63,94,.12); background:rgba(255,255,255,.82); }
-    .paiva-mock__brand { font-family:Georgia,serif; font-size:clamp(8px,1.15vw,18px); line-height:1; color:#172b3f; white-space:nowrap; }
-    .paiva-mock__brand small { display:block; margin-top:3px; font-family:Inter,sans-serif; font-size:.46em; letter-spacing:.32em; text-align:center; color:#8b6d45; }
-    .paiva-mock__links { display:flex; align-items:center; gap:clamp(5px,1vw,16px); font-size:clamp(5px,.52vw,9px); color:#4b5563; white-space:nowrap; }
-    .paiva-mock__cta { border-radius:999px; background:#22c55e; color:#fff; padding:.55em 1em; font-weight:700; }
-    .paiva-mock__hero { flex:1; display:grid; grid-template-columns:1.25fr .75fr; align-items:center; gap:5%; padding:5% 8%; overflow:hidden; }
-    .paiva-mock__eyebrow { font-size:clamp(5px,.58vw,10px); font-weight:800; letter-spacing:.18em; color:#264367; text-transform:uppercase; }
-    .paiva-mock__title { margin-top:3%; max-width:11ch; font-family:Georgia,serif; font-size:clamp(19px,3.25vw,56px); line-height:.98; color:#18181b; }
-    .paiva-mock__copy { margin-top:4%; max-width:42ch; font-size:clamp(6px,.72vw,12px); line-height:1.55; color:#6b7280; }
-    .paiva-mock__actions { display:flex; gap:2.5%; margin-top:5%; }
-    .paiva-mock__button { border:1px solid #ddd6cc; border-radius:7px; padding:2.2% 4%; font-size:clamp(5px,.58vw,10px); font-weight:700; background:#fff; }
-    .paiva-mock__button--primary { border-color:#22c55e; background:#22c55e; color:#fff; }
-    .paiva-mock__lawyer { position:relative; min-height:72%; border-radius:34% 34% 18px 18px; background:linear-gradient(180deg,#294b6b,#132d47); box-shadow:0 18px 45px rgba(31,63,94,.22); display:grid; place-items:center; color:#c6a573; }
-    .paiva-mock__initials { font-family:Georgia,serif; font-size:clamp(28px,5vw,82px); }
-    .paiva-mock__lawyer-name { position:absolute; left:10%; right:10%; bottom:15%; text-align:center; color:#fff; font-size:clamp(6px,.72vw,12px); font-weight:700; }
-    .paiva-mock__badge { position:absolute; left:-10%; top:18%; border-radius:8px; background:#fff; padding:5% 7%; box-shadow:0 8px 24px rgba(0,0,0,.13); font-size:clamp(5px,.58vw,10px); font-weight:700; color:#1f2937; white-space:nowrap; }
-    @media (max-width:640px) {
-      .paiva-mock__links span:not(.paiva-mock__cta) { display:none; }
-      .paiva-mock__hero { grid-template-columns:1.1fr .9fr; padding:6% 5%; }
-      .paiva-mock__title { font-size:clamp(17px,6vw,30px); }
-      .paiva-mock__copy { font-size:clamp(6px,1.8vw,9px); }
-    }
+    :root { --mx: 50vw; --my: 30vh; --progress: 0%; }
+    * { box-sizing: border-box; }
+    html, body { width:100%; max-width:100%; overflow-x:hidden; overscroll-behavior-x:none; }
+    body { margin:0; font-family:Inter,sans-serif; background:#fff; color:#18181b; }
+    h1,h2,h3,h4,.font-display { font-family:'Space Grotesk',sans-serif; }
+    img { max-width:100%; display:block; }
+    button,a { -webkit-tap-highlight-color:transparent; }
 
-    .rainbow-mock,.cefis-mock{height:100%;width:100%;position:relative;overflow:hidden;background:#fff}
-    .mock-nav{height:14%;display:flex;align-items:center;justify-content:space-between;padding:0 6%;border-bottom:1px solid #eee;font-size:clamp(6px,.62vw,10px);font-weight:700;color:#52525b}
-    .mock-links{display:flex;gap:1.2rem;align-items:center}.mock-pill{padding:.55em 1em;border-radius:999px;color:#fff;background:#22c55e}
-    .rainbow-mock{background:linear-gradient(135deg,#fff 0%,#fff7ff 48%,#effdfa 100%)}
-    .rainbow-mock__hero{height:86%;display:grid;grid-template-columns:1.05fr .95fr;gap:5%;align-items:center;padding:5% 7%}
-    .rainbow-mock__badge{display:inline-block;border-radius:999px;background:#fff;padding:.65em 1em;box-shadow:0 8px 24px rgba(0,0,0,.08);font-size:clamp(6px,.62vw,10px);color:#8b5cf6;font-weight:700}
-    .rainbow-mock__title{margin-top:5%;max-width:11ch;font-size:clamp(20px,3.3vw,50px);line-height:.98;font-weight:800;color:#1f2140}
-    .rainbow-mock__title span{background:linear-gradient(transparent 70%,#fde68a 0)}
-    .rainbow-mock__copy{margin-top:4%;max-width:40ch;font-size:clamp(6px,.72vw,12px);line-height:1.55;color:#6b7280}
-    .rainbow-mock__art{height:78%;border-radius:42% 34% 38% 30%;background:linear-gradient(135deg,#9ee8dc,#d8fff8);display:grid;place-items:center;position:relative}
-    .rainbow-mock__phone{width:54%;height:84%;border:7px solid #fff;border-radius:24px;background:linear-gradient(180deg,#fff,#fef3c7);box-shadow:0 18px 45px rgba(0,0,0,.15);transform:rotate(3deg)}
-    .rainbow-mock__phone:after{content:'ABC';display:grid;place-items:center;height:100%;font-weight:900;font-size:clamp(20px,3vw,44px);color:#ec4899}
-    .cefis-mock{background:linear-gradient(135deg,#15377d 0%,#173f91 55%,#1f4eb0 100%);color:white}
-    .cefis-mock .mock-nav{border-color:rgba(255,255,255,.16);color:#fff}
-    .cefis-mock__hero{height:86%;display:grid;grid-template-columns:1.05fr .95fr;gap:5%;align-items:center;padding:5% 7%}
-    .cefis-mock__eyebrow{font-size:clamp(6px,.62vw,10px);font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:#fde047}
-    .cefis-mock__title{margin-top:4%;max-width:12ch;font-size:clamp(20px,3.1vw,48px);line-height:1;font-weight:800}
-    .cefis-mock__copy{margin-top:4%;max-width:40ch;font-size:clamp(6px,.72vw,12px);line-height:1.55;color:#dbeafe}
-    .cefis-mock__cta{display:inline-block;margin-top:5%;padding:.8em 1.2em;border-radius:10px;background:#fde047;color:#17377f;font-size:clamp(6px,.65vw,11px);font-weight:800}
-    .cefis-mock__visual{height:78%;border-radius:28px;background:linear-gradient(160deg,#fff,#dbeafe);position:relative;overflow:hidden}
-    .cefis-mock__visual:before{content:'';position:absolute;inset:14% 18%;border-radius:50%;background:linear-gradient(135deg,#60a5fa,#1d4ed8);box-shadow:0 20px 50px rgba(0,0,0,.18)}
-    .cefis-mock__visual:after{content:'CEFIS';position:absolute;inset:0;display:grid;place-items:center;font-weight:900;font-size:clamp(20px,3vw,44px);color:#fff;letter-spacing:.08em}
-    @media(max-width:640px){.mock-links span:not(.mock-pill){display:none}.rainbow-mock__hero,.cefis-mock__hero{padding:6% 5%;grid-template-columns:1.08fr .92fr}.rainbow-mock__title,.cefis-mock__title{font-size:clamp(17px,6vw,29px)}}
+    .scroll-progress { position:fixed; inset:0 auto auto 0; z-index:100; width:var(--progress); height:3px; background:linear-gradient(90deg,#54d8ff,#6d7cff,#9b6dff); box-shadow:0 0 18px rgba(109,124,255,.8); }
+    .grid-bg { background-image:linear-gradient(rgba(255,255,255,.045) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.045) 1px,transparent 1px); background-size:38px 38px; }
+    .spotlight:before { content:""; position:absolute; inset:0; pointer-events:none; background:radial-gradient(520px circle at var(--mx) var(--my),rgba(109,124,255,.18),transparent 56%); }
+    .grain:after { content:""; position:absolute; inset:0; pointer-events:none; opacity:.035; mix-blend-mode:soft-light; background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 180 180' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.8'/%3E%3C/svg%3E"); }
+    .aurora { position:absolute; width:42rem; height:42rem; border-radius:999px; filter:blur(110px); opacity:.22; animation:drift 12s ease-in-out infinite alternate; }
+    .aurora.two { animation-delay:-5s; animation-duration:15s; }
+    @keyframes drift { from{transform:translate3d(-3%,0,0) scale(.95)} to{transform:translate3d(8%,6%,0) scale(1.08)} }
 
-    .project-card:hover .project-shot { transform: scale(1.045); }
-    .reveal { opacity:0; transform:translateY(22px); transition:opacity .7s ease,transform .7s ease; }
+    .word-rotator { display:block; width:100%; min-width:0; min-height:1.08em; overflow:visible; }
+    .rotating-word { display:block; width:100%; opacity:1; transform:translateY(0); transition:opacity .28s ease,transform .28s ease; overflow-wrap:anywhere; }
+    .rotating-word.is-changing { opacity:0; transform:translateY(.2em); }
+
+    .browser-float { animation:float 7s ease-in-out infinite; transform-origin:center; }
+    .browser-float.delay { animation-delay:-3.5s; }
+    @keyframes float { 0%,100%{transform:translateY(0) rotate(-1deg)} 50%{transform:translateY(-14px) rotate(1deg)} }
+
+    .marquee-track { width:max-content; animation:marquee 28s linear infinite; }
+    @keyframes marquee { to{transform:translateX(-50%)} }
+
+    .reveal { opacity:0; transform:translateY(28px); transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1); }
     .reveal.visible { opacity:1; transform:none; }
+    .tilt { transform-style:preserve-3d; transition:transform .18s ease,box-shadow .25s ease; }
+    .tilt > * { transform:translateZ(18px); }
+
+    .project-shell { background:linear-gradient(145deg,rgba(255,255,255,.09),rgba(255,255,255,.025)); }
+    .project-tab.active { color:#fff; background:rgba(255,255,255,.09); border-color:rgba(255,255,255,.16); }
+    .project-tab.active .tab-index { color:#8fa0ff; }
+    .live-stage { position:relative; width:100%; aspect-ratio:16/10; overflow:hidden; background:#f4f4f5; }
+    .live-frame { position:absolute; left:0; top:0; width:1440px; height:900px; border:0; transform-origin:top left; pointer-events:none; background:white; }
+    .live-panel { display:none; }
+    .live-panel.active { display:block; }
+    .live-overlay { position:absolute; inset:0; z-index:4; }
+    .live-badge { backdrop-filter:blur(14px); -webkit-backdrop-filter:blur(14px); }
+
+    .swipe-hint { animation:swipe 1.7s ease-in-out infinite; }
+    @keyframes swipe { 0%,100%{transform:translateX(0)} 50%{transform:translateX(8px)} }
+
+    .bento-card { position:relative; overflow:hidden; }
+    .bento-card:before { content:""; position:absolute; inset:-1px; border-radius:inherit; padding:1px; background:linear-gradient(135deg,rgba(109,124,255,.7),rgba(255,255,255,.08),rgba(84,216,255,.35)); -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0); -webkit-mask-composite:xor; mask-composite:exclude; pointer-events:none; opacity:.65; }
+    .bento-card:hover .bento-icon { transform:rotate(-8deg) scale(1.08); }
+    .bento-icon { transition:transform .35s ease; }
+
+    .magnetic { transition:transform .16s ease; }
+    .counter { font-variant-numeric:tabular-nums; }
     .faq-content { max-height:0; overflow:hidden; transition:max-height .35s ease; }
-    .faq-item.open .faq-content { max-height:220px; }
-    .faq-item.open .faq-icon { transform:rotate(45deg); }
-    .marquee { animation: marquee 28s linear infinite; }
-    .hide-scrollbar::-webkit-scrollbar { display:none; }
-    .hide-scrollbar { -ms-overflow-style:none; scrollbar-width:none; }
-    .portfolio-track { scroll-padding-inline: 0; align-items: stretch; overscroll-behavior-x:contain; -webkit-overflow-scrolling:touch; }
-    .portfolio-card { flex: 0 0 84%; min-width: 0; height: 34rem; }
-    .portfolio-media { height: 17.5rem; flex: 0 0 17.5rem; }
-    .portfolio-media img, .portfolio-media .site-preview { width:100%; height:100%; }
-    .live-preview { position:relative; width:100%; height:100%; overflow:hidden; background:#f4f4f5; }
-    .live-preview iframe { position:absolute; top:0; left:0; width:1440px; height:900px; border:0; transform-origin:top left; pointer-events:none; background:white; }
-    .portfolio-body { min-height:0; }
-    .portfolio-title { min-height:3.5rem; }
-    .portfolio-description { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; }
-    .portfolio-dot { width:.55rem; height:.55rem; border-radius:999px; background:#d4d4d8; transition:width .25s ease,background .25s ease; }
-    .portfolio-dot.active { width:1.75rem; background:#5b7cff; }
-    .carousel-btn:disabled { opacity:.35; cursor:not-allowed; transform:none; }
-    .mobile-swipe-hint { animation: swipeHint 1.8s ease-in-out infinite; }
-    .portfolio-edge-hint { background:linear-gradient(90deg,rgba(255,255,255,0),rgba(255,255,255,.88) 70%,#fff); }
-    @keyframes swipeHint { 0%,100% { transform:translateX(0); } 50% { transform:translateX(7px); } }
-    @media (min-width: 640px) { .portfolio-card { flex-basis: 72%; height:35rem; } }
-    @media (min-width: 1024px) { .portfolio-card { flex-basis: calc((100% - 1.5rem) / 2); height:36rem; } }
-    @keyframes marquee { from { transform:translateX(0) } to { transform:translateX(-50%) } }
-    @media (prefers-reduced-motion: reduce) { *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; } .reveal {opacity:1; transform:none;} }
+    .faq-item.open .faq-content { max-height:240px; }
+    .faq-item.open .faq-plus { transform:rotate(45deg); }
+
+    .whatsapp-chip { width:1.35rem;height:1.35rem;border-radius:999px;background:#fff;display:inline-flex;align-items:center;justify-content:center;overflow:hidden;flex:none; }
+    .whatsapp-chip img { width:1rem;height:1rem;object-fit:contain; }
+
+    main,section,header,footer { width:100%; max-width:100%; }
+    main { overflow-x:clip; }
+    .hero-copy,.hero-visual,.hero-preview,.project-shell,.project-tabs,.project-stage-wrap { min-width:0; max-width:100%; }
+    .hero-title { max-width:100%; overflow-wrap:anywhere; }
+    .hero-preview { width:92%; margin-left:auto; }
+    .hero-project-badge,.hero-experience-badge { max-width:calc(100% - 1rem); }
+    .hero-badge > span:last-child,.project-tab strong,.project-tab small { min-width:0; overflow-wrap:anywhere; }
+    body.menu-open { overflow:hidden; }
+
+    @media (max-width: 900px) {
+      .spotlight:before { display:none; }
+      .browser-float { animation:none; }
+      .project-tabs { display:flex; overflow-x:auto; scroll-snap-type:x mandatory; scrollbar-width:none; padding-bottom:.25rem; }
+      .project-tabs::-webkit-scrollbar { display:none; }
+      .project-tab { min-width:82%; scroll-snap-align:start; }
+      .hero-preview { width:100%; margin-left:0; }
+      .hero-project-badge { position:static!important; width:100%!important; margin-top:.75rem; }
+      .hero-experience-badge { display:none; }
+    }
+    @media (max-width: 640px) {
+      .marquee-track { animation-duration:20s; }
+      .hero-title { font-size:clamp(2.25rem,10.5vw,3rem)!important; line-height:1.04!important; letter-spacing:-.045em!important; }
+      .hero-badge { max-width:100%; }
+      .hero-stats { grid-template-columns:repeat(2,minmax(0,1fr))!important; }
+      .hero-stats > div:last-child { grid-column:1 / -1; }
+      .hero-stats > div { min-width:0; }
+      .hero-stats span { overflow-wrap:anywhere; }
+      .project-tab { min-width:88%; }
+      .project-shell { border-radius:24px; padding:.625rem; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *,*::before,*::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+      .reveal { opacity:1; transform:none; }
+    }
   </style>
 </head>
-<body class="bg-white text-zinc-900 antialiased selection:bg-brand selection:text-white">
+<body class="antialiased selection:bg-brand selection:text-white">
+<div class="scroll-progress"></div>
 
-<header id="header" class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/75 backdrop-blur-xl">
+<header id="header" class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-ink/70 backdrop-blur-xl transition-all">
   <div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-    <a href="#inicio" class="text-white"><span class="font-display text-lg font-bold tracking-tight sm:text-xl">Eduardo Simionato</span></a>
-
+    <a href="#inicio" class="font-display text-lg font-bold tracking-tight text-white sm:text-xl">Eduardo Simionato<span class="text-brand">.</span></a>
     <nav class="hidden items-center gap-7 lg:flex">
-      <a href="#sobre" class="text-sm text-zinc-400 hover:text-white">Sobre</a>
-      <a href="#servicos" class="text-sm text-zinc-400 hover:text-white">Soluções</a>
-      <a href="#portfolio" class="text-sm text-zinc-400 hover:text-white">Portfólio</a>
-      <a href="#processo" class="text-sm text-zinc-400 hover:text-white">Processo</a>
-      <a href="#faq" class="text-sm text-zinc-400 hover:text-white">FAQ</a>
-      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-semibold text-white hover:brightness-110"><span class="wpp-icon-chip" aria-hidden="true"><img src="wppsemfundo.png" alt="" /></span> Solicitar orçamento</a>
+      <a href="#sobre" class="text-sm text-zinc-400 transition hover:text-white">Sobre</a>
+      <a href="#servicos" class="text-sm text-zinc-400 transition hover:text-white">Soluções</a>
+      <a href="#portfolio" class="text-sm text-zinc-400 transition hover:text-white">Portfólio</a>
+      <a href="#processo" class="text-sm text-zinc-400 transition hover:text-white">Processo</a>
+      <a href="#faq" class="text-sm text-zinc-400 transition hover:text-white">FAQ</a>
+      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="magnetic inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-2.5 text-sm font-bold text-white shadow-lg shadow-whatsapp/20"><span class="whatsapp-chip"><img src="wppsemfundo.png" alt=""></span> Solicitar orçamento</a>
     </nav>
-
     <button id="menuBtn" class="grid h-10 w-10 place-items-center rounded-xl border border-white/10 text-white lg:hidden" aria-label="Abrir menu" aria-expanded="false"><i class="ph ph-list text-2xl"></i></button>
   </div>
-  <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink px-4 py-4 lg:hidden">
+  <div id="mobileMenu" class="hidden border-t border-white/10 bg-ink/95 px-4 py-4 lg:hidden">
     <nav class="flex flex-col gap-1">
       <a href="#sobre" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Sobre</a>
       <a href="#servicos" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Soluções</a>
       <a href="#portfolio" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Portfólio</a>
       <a href="#processo" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">Processo</a>
       <a href="#faq" class="rounded-xl px-4 py-3 text-zinc-300 hover:bg-white/5">FAQ</a>
-      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-semibold text-white"><span class="wpp-icon-chip" aria-hidden="true"><img src="wppsemfundo.png" alt="" /></span> Falar no WhatsApp</a>
+      <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20uma%20landing%20page." target="_blank" rel="noopener" class="mt-2 inline-flex items-center justify-center gap-2 rounded-xl bg-whatsapp px-4 py-3 font-bold text-white"><span class="whatsapp-chip"><img src="wppsemfundo.png" alt=""></span> Falar no WhatsApp</a>
     </nav>
   </div>
 </header>
 
 <main>
-<section id="inicio" class="noise relative overflow-hidden bg-ink pt-28 text-white sm:pt-32 lg:min-h-[820px] lg:pt-40">
-  <div class="absolute inset-0 grid-bg opacity-60"></div>
-  <div class="absolute -left-40 top-10 h-96 w-96 rounded-full bg-brand/25 blur-[120px]"></div>
-  <div class="absolute -right-24 top-48 h-96 w-96 rounded-full bg-brand2/20 blur-[130px]"></div>
+<section id="inicio" class="spotlight grain relative min-h-screen overflow-hidden bg-ink pt-28 text-white sm:pt-32 lg:pt-40">
+  <div class="absolute inset-0 grid-bg opacity-70"></div>
+  <div class="aurora -left-48 top-0 bg-brand"></div>
+  <div class="aurora two -right-48 top-24 bg-violet"></div>
+  <div class="absolute bottom-0 left-1/2 h-40 w-[80%] -translate-x-1/2 bg-cyan/10 blur-[100px]"></div>
 
-  <div class="relative mx-auto grid max-w-7xl items-center gap-14 px-4 pb-20 sm:px-6 lg:grid-cols-[1.02fr_.98fr] lg:px-8 lg:pb-28">
-    <div class="text-center lg:text-left">
-      <div class="mb-7 inline-flex items-center gap-3 rounded-full border border-white/10 bg-white/5 py-2 pl-2 pr-4 backdrop-blur">
-        <img src="eduardo.png" alt="Eduardo Simionato" class="h-9 w-9 rounded-full object-cover" />
-        <span class="text-sm text-zinc-300">Desenvolvimento, design e estratégia em uma só entrega</span>
+  <div class="relative mx-auto grid max-w-7xl items-center gap-16 px-4 pb-24 sm:px-6 lg:grid-cols-[1.04fr_.96fr] lg:px-8 lg:pb-32">
+    <div class="hero-copy min-w-0 text-center lg:text-left">
+      <div class="hero-badge mb-7 inline-flex max-w-full items-center gap-3 rounded-full border border-white/10 bg-white/[.055] py-2 pl-2 pr-4 backdrop-blur-xl">
+        <span class="relative"><span class="absolute inset-0 animate-ping rounded-full bg-whatsapp/50"></span><img src="eduardo.png" alt="Eduardo Simionato" class="relative h-9 w-9 rounded-full object-cover"></span>
+        <span class="text-sm text-zinc-300">Disponível para novos projetos</span>
       </div>
-      <h1 class="font-display text-4xl font-bold leading-[1.05] tracking-[-.04em] sm:text-6xl lg:text-7xl">
-        Landing pages que transformam <span class="bg-gradient-to-r from-[#8aa0ff] to-[#b284ff] bg-clip-text text-transparent">visitas em conversas.</span>
+
+      <h1 class="hero-title font-display text-4xl font-bold leading-[1.02] tracking-[-.05em] sm:text-5xl lg:text-[4.8rem]">
+        Sites que fazem sua marca parecer
+        <span class="word-rotator bg-gradient-to-r from-cyan via-brand to-violet bg-clip-text text-transparent">
+          <span id="rotatingWord" class="rotating-word">inesquecível.</span>
+        </span>
       </h1>
-      <p class="mx-auto mt-7 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg lg:mx-0">
-        Crio sites rápidos, responsivos e visualmente profissionais para apresentar seu negócio com clareza e conduzir o cliente até o WhatsApp.
-      </p>
+      <p class="mx-auto mt-7 max-w-2xl text-base leading-8 text-zinc-400 sm:text-lg lg:mx-0">Landing pages com presença visual, navegação fluida e estrutura estratégica para transformar curiosidade em conversa no WhatsApp.</p>
+
       <div class="mt-9 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-        <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento%20para%20uma%20landing%20page." target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-4 font-semibold text-white shadow-lg shadow-whatsapp/20 hover:-translate-y-0.5 hover:brightness-110"><span class="wpp-icon-chip" aria-hidden="true"><img src="wppsemfundo.png" alt="" /></span> Solicitar orçamento</a>
-        <a href="#portfolio" class="inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-7 py-4 font-semibold text-white hover:bg-white/10">Ver projetos <i class="ph-bold ph-arrow-down"></i></a>
+        <a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento%20para%20uma%20landing%20page." target="_blank" rel="noopener" class="magnetic inline-flex w-full items-center justify-center gap-2 rounded-full bg-whatsapp px-7 py-4 sm:w-auto font-bold text-white shadow-xl shadow-whatsapp/20"><span class="whatsapp-chip"><img src="wppsemfundo.png" alt=""></span> Quero um site assim</a>
+        <a href="#portfolio" class="magnetic inline-flex w-full items-center justify-center gap-2 rounded-full border border-white/15 sm:w-auto bg-white/[.055] px-7 py-4 font-bold text-white backdrop-blur hover:bg-white/10">Explorar projetos <i class="ph-bold ph-arrow-down"></i></a>
       </div>
-      <div class="mt-9 flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-zinc-400 lg:justify-start">
-        <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand"></i> Mobile-first</span>
-        <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand"></i> Carregamento rápido</span>
-        <span class="flex items-center gap-2"><i class="ph-fill ph-check-circle text-brand"></i> CTA estratégico</span>
+
+      <div class="hero-stats mt-10 grid grid-cols-2 gap-4 border-t border-white/10 pt-7 text-left sm:grid-cols-3">
+        <div><strong class="counter font-display text-2xl font-bold sm:text-3xl" data-target="3">0</strong><span class="mt-1 block text-xs text-zinc-500 sm:text-sm">projetos publicados</span></div>
+        <div><strong class="font-display text-2xl font-bold sm:text-3xl">100%</strong><span class="mt-1 block text-xs text-zinc-500 sm:text-sm">responsivo</span></div>
+        <div><strong class="font-display text-2xl font-bold sm:text-3xl">1:1</strong><span class="mt-1 block text-xs text-zinc-500 sm:text-sm">atendimento direto</span></div>
       </div>
     </div>
 
-    <div class="relative mx-auto w-full max-w-xl lg:max-w-none">
-      <div class="absolute inset-8 rounded-full bg-brand/20 blur-[90px]"></div>
-      <div class="relative rounded-[26px] border border-white/10 bg-white/[.045] p-3 shadow-2xl backdrop-blur sm:p-5">
-        <div class="overflow-hidden rounded-2xl border border-white/10 bg-panel">
-          <div class="flex h-11 items-center gap-2 border-b border-white/10 px-4">
-            <span class="h-2.5 w-2.5 rounded-full bg-red-400"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-400"></span><span class="h-2.5 w-2.5 rounded-full bg-green-400"></span>
-            <span class="ml-3 truncate text-xs text-zinc-500">paiva-baptista.vercel.app</span>
-          </div>
-          <div class="site-preview aspect-[16/10] w-full">
-            <img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fpaiva-baptista.vercel.app%2F?w=1600&h=900" alt="Prévia real do site Paiva &amp; Baptista Advogados" class="h-full w-full object-cover object-top" loading="eager" decoding="async" />
-          </div>
+    <div class="hero-visual relative mx-auto w-full max-w-xl lg:max-w-none">
+      <div class="absolute inset-10 rounded-full bg-brand/25 blur-[100px]"></div>
+      <div class="hero-preview browser-float relative overflow-hidden rounded-[26px] border border-white/10 bg-white/[.055] p-3 shadow-2xl backdrop-blur-xl sm:p-4">
+        <div class="overflow-hidden rounded-2xl bg-zinc-950">
+          <div class="flex h-10 items-center gap-2 border-b border-white/10 px-4"><span class="h-2.5 w-2.5 rounded-full bg-red-400"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-400"></span><span class="h-2.5 w-2.5 rounded-full bg-green-400"></span><span class="ml-3 text-xs text-zinc-500">paiva-baptista.vercel.app</span></div>
+          <div class="live-stage hero-live" data-url="https://paiva-baptista.vercel.app/"><iframe class="live-frame" src="https://paiva-baptista.vercel.app/" title="Paiva & Baptista Advogados" loading="eager" tabindex="-1"></iframe><a class="live-overlay" href="https://paiva-baptista.vercel.app/" target="_blank" rel="noopener" aria-label="Abrir projeto Paiva & Baptista"></a></div>
         </div>
       </div>
-      <div class="absolute -bottom-6 left-3 rounded-2xl border border-white/10 bg-panel/95 px-4 py-3 shadow-2xl backdrop-blur sm:left-[-24px]">
-        <p class="text-xs uppercase tracking-[.18em] text-zinc-500">Projeto mais recente</p>
-        <p class="mt-1 font-display font-semibold">Paiva &amp; Baptista Advogados</p>
+      <div class="hero-project-badge browser-float delay absolute -bottom-12 left-0 w-[48%] rounded-2xl border border-white/10 bg-panel/95 p-4 shadow-2xl backdrop-blur-xl sm:-left-8">
+        <p class="text-[10px] font-bold uppercase tracking-[.2em] text-zinc-500">Projeto mais recente</p><p class="mt-2 font-display text-sm font-bold sm:text-base">Paiva & Baptista</p><div class="mt-3 h-1.5 overflow-hidden rounded-full bg-white/10"><div class="h-full w-[88%] rounded-full bg-gradient-to-r from-cyan to-brand"></div></div>
       </div>
+      <div class="hero-experience-badge absolute -right-2 top-8 rounded-2xl border border-white/10 bg-panel/85 px-4 py-3 shadow-xl backdrop-blur sm:-right-8"><p class="text-xs text-zinc-500">Experiência</p><p class="mt-1 flex items-center gap-2 text-sm font-bold"><span class="h-2 w-2 rounded-full bg-whatsapp"></span> Web + Mobile</p></div>
     </div>
   </div>
+
+  <a href="#sobre" class="absolute bottom-6 left-1/2 hidden -translate-x-1/2 flex-col items-center gap-2 text-xs uppercase tracking-[.2em] text-zinc-600 lg:flex"><span>Scroll</span><span class="h-10 w-px bg-gradient-to-b from-zinc-600 to-transparent"></span></a>
 </section>
 
 <section class="overflow-hidden border-y border-zinc-200 bg-zinc-50 py-4">
-  <div class="marquee flex w-max items-center gap-10 whitespace-nowrap text-sm font-semibold uppercase tracking-[.2em] text-zinc-400">
-    <span>Landing Pages</span><span>•</span><span>Design Responsivo</span><span>•</span><span>WhatsApp</span><span>•</span><span>Performance</span><span>•</span><span>SEO Técnico</span><span>•</span>
-    <span>Landing Pages</span><span>•</span><span>Design Responsivo</span><span>•</span><span>WhatsApp</span><span>•</span><span>Performance</span><span>•</span><span>SEO Técnico</span><span>•</span>
+  <div class="marquee-track flex items-center gap-9 whitespace-nowrap text-xs font-bold uppercase tracking-[.22em] text-zinc-400">
+    <span>Landing Pages</span><span>✦</span><span>Design Responsivo</span><span>✦</span><span>WhatsApp</span><span>✦</span><span>Performance</span><span>✦</span><span>SEO Técnico</span><span>✦</span><span>Identidade Visual</span><span>✦</span>
+    <span>Landing Pages</span><span>✦</span><span>Design Responsivo</span><span>✦</span><span>WhatsApp</span><span>✦</span><span>Performance</span><span>✦</span><span>SEO Técnico</span><span>✦</span><span>Identidade Visual</span><span>✦</span>
   </div>
 </section>
 
-<section id="sobre" class="overflow-hidden py-20 sm:py-28">
-  <div class="mx-auto grid max-w-7xl items-center gap-12 px-4 sm:px-6 lg:grid-cols-[.8fr_1.2fr] lg:px-8">
+<section id="sobre" class="relative overflow-hidden py-20 sm:py-28">
+  <div class="absolute -right-44 top-20 h-80 w-80 rounded-full bg-brand/10 blur-[100px]"></div>
+  <div class="mx-auto grid max-w-7xl items-center gap-14 px-4 sm:px-6 lg:grid-cols-[.82fr_1.18fr] lg:px-8">
     <div class="reveal relative mx-auto w-full max-w-md">
-      <div class="absolute -inset-4 rotate-3 rounded-[30px] bg-gradient-to-br from-brand/15 to-brand2/15"></div>
-      <img src="eduardo.png" alt="Retrato de Eduardo Simionato" class="relative aspect-[4/5] w-full rounded-[26px] object-cover shadow-card" />
-      <div class="absolute -bottom-5 -right-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-card sm:-right-8">
-        <div class="flex items-center gap-3"><span class="grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand"><i class="ph-bold ph-rocket-launch text-xl"></i></span><div><p class="text-xs uppercase tracking-wider text-zinc-400">Especialidade</p><p class="font-display font-bold">Sites de conversão</p></div></div>
-      </div>
+      <div class="absolute -inset-5 rotate-3 rounded-[32px] bg-gradient-to-br from-brand/20 via-violet/10 to-cyan/20"></div>
+      <div class="relative overflow-hidden rounded-[28px] bg-zinc-100 shadow-card"><img src="eduardo.png" alt="Eduardo Simionato" class="aspect-[4/5] w-full object-cover transition duration-700 hover:scale-105"></div>
+      <div class="absolute -bottom-5 -right-2 rounded-2xl border border-zinc-200 bg-white p-4 shadow-card sm:-right-8"><div class="flex items-center gap-3"><span class="grid h-11 w-11 place-items-center rounded-xl bg-brand/10 text-brand"><i class="ph-bold ph-sparkle text-xl"></i></span><div><p class="text-xs uppercase tracking-wider text-zinc-400">Foco do trabalho</p><p class="font-display font-bold">Visual que vende</p></div></div></div>
     </div>
     <div class="reveal">
       <p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">Sobre o trabalho</p>
-      <h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Seu site precisa explicar, convencer e facilitar o próximo passo.</h2>
-      <div class="mt-7 space-y-5 text-base leading-8 text-zinc-600 sm:text-lg">
-        <p>Uma landing page eficiente não é apenas bonita. Ela organiza a informação, transmite credibilidade e reduz o caminho entre a dúvida do visitante e o contato com sua empresa.</p>
-        <p>Meu processo combina estrutura de conteúdo, design responsivo e desenvolvimento front-end para entregar uma página coerente com o posicionamento do seu negócio.</p>
-      </div>
+      <h2 class="font-display text-3xl font-bold tracking-[-.04em] sm:text-5xl">Seu site precisa causar uma ótima primeira impressão antes mesmo do primeiro “olá”.</h2>
+      <p class="mt-7 text-lg leading-8 text-zinc-600">Eu uno estrutura, design e desenvolvimento para transformar informações soltas em uma presença digital que transmite credibilidade, personalidade e clareza.</p>
       <div class="mt-9 grid gap-4 sm:grid-cols-3">
-        <div class="rounded-2xl border border-zinc-200 p-5"><i class="ph-bold ph-device-mobile text-2xl text-brand"></i><p class="mt-3 font-display font-bold">Mobile-first</p><p class="mt-1 text-sm text-zinc-500">Prioridade para a experiência no celular.</p></div>
-        <div class="rounded-2xl border border-zinc-200 p-5"><i class="ph-bold ph-lightning text-2xl text-brand"></i><p class="mt-3 font-display font-bold">Performance</p><p class="mt-1 text-sm text-zinc-500">Estrutura leve e carregamento eficiente.</p></div>
-        <div class="rounded-2xl border border-zinc-200 p-5"><i class="ph-bold ph-target text-2xl text-brand"></i><p class="mt-3 font-display font-bold">Conversão</p><p class="mt-1 text-sm text-zinc-500">Chamadas para ação claras e estratégicas.</p></div>
+        <div class="tilt rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm"><i class="ph-bold ph-device-mobile text-2xl text-brand"></i><p class="mt-4 font-display font-bold">Mobile-first</p><p class="mt-2 text-sm leading-6 text-zinc-500">A experiência começa pelo celular, onde seus clientes realmente estão.</p></div>
+        <div class="tilt rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm"><i class="ph-bold ph-lightning text-2xl text-brand"></i><p class="mt-4 font-display font-bold">Rápido e leve</p><p class="mt-2 text-sm leading-6 text-zinc-500">Movimento visual sem sacrificar carregamento e usabilidade.</p></div>
+        <div class="tilt rounded-2xl border border-zinc-200 bg-white p-5 shadow-sm"><i class="ph-bold ph-target text-2xl text-brand"></i><p class="mt-4 font-display font-bold">Direto ao ponto</p><p class="mt-2 text-sm leading-6 text-zinc-500">Cada seção conduz o visitante para a próxima ação.</p></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="servicos" class="bg-zinc-950 py-20 text-white sm:py-28">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="reveal max-w-3xl">
-      <p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-[#8aa0ff]">Soluções</p>
-      <h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Uma página completa, sem complicar o processo.</h2>
-      <p class="mt-6 text-lg leading-8 text-zinc-400">Do planejamento à publicação, cada etapa é pensada para apresentar o seu negócio com consistência.</p>
-    </div>
-    <div class="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-      <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand/15 text-[#8aa0ff]"><i class="ph-bold ph-layout text-2xl"></i></span><h3 class="mt-6 text-xl font-bold">Landing Page</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Página direcionada para campanhas, serviços, lançamentos ou captação de contatos.</p></article>
-      <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand/15 text-[#8aa0ff]"><i class="ph-bold ph-pen-nib text-2xl"></i></span><h3 class="mt-6 text-xl font-bold">Estrutura e copy</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Organização das informações para uma leitura clara, objetiva e persuasiva.</p></article>
-      <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand/15 text-[#8aa0ff]"><i class="ph-bold ph-code text-2xl"></i></span><h3 class="mt-6 text-xl font-bold">Desenvolvimento</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Implementação responsiva com atenção à velocidade, acessibilidade e estabilidade.</p></article>
-      <article class="reveal rounded-3xl border border-white/10 bg-white/[.04] p-7"><span class="grid h-12 w-12 place-items-center rounded-2xl bg-brand/15 text-[#8aa0ff]"><i class="ph-bold ph-cloud-arrow-up text-2xl"></i></span><h3 class="mt-6 text-xl font-bold">Publicação</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Configuração para colocar a página no ar e pronta para receber visitantes.</p></article>
+<section id="servicos" class="relative overflow-hidden bg-zinc-950 py-20 text-white sm:py-28">
+  <div class="absolute inset-0 grid-bg opacity-35"></div>
+  <div class="absolute left-1/2 top-0 h-64 w-[60%] -translate-x-1/2 rounded-full bg-brand/15 blur-[100px]"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal max-w-3xl"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-[#91a0ff]">O que entra no projeto</p><h2 class="font-display text-3xl font-bold tracking-[-.04em] sm:text-5xl">Mais que uma página bonita. Uma experiência completa.</h2></div>
+    <div class="mt-12 grid gap-5 lg:grid-cols-12">
+      <article class="bento-card reveal rounded-[28px] bg-white/[.045] p-7 lg:col-span-7 lg:p-9"><span class="bento-icon grid h-14 w-14 place-items-center rounded-2xl bg-brand/15 text-[#91a0ff]"><i class="ph-bold ph-layout text-3xl"></i></span><h3 class="mt-8 font-display text-2xl font-bold sm:text-3xl">Design exclusivo para o seu negócio</h3><p class="mt-4 max-w-2xl leading-8 text-zinc-400">Nada de página genérica. Cores, tipografia, ritmo visual e seções são definidos conforme o posicionamento que sua marca precisa transmitir.</p><div class="mt-8 flex flex-wrap gap-2 text-xs font-bold text-zinc-400"><span class="rounded-full border border-white/10 px-3 py-2">Direção visual</span><span class="rounded-full border border-white/10 px-3 py-2">Hierarquia</span><span class="rounded-full border border-white/10 px-3 py-2">Identidade</span></div></article>
+      <article class="bento-card reveal rounded-[28px] bg-gradient-to-br from-brand/20 to-violet/10 p-7 lg:col-span-5 lg:p-9"><span class="bento-icon grid h-14 w-14 place-items-center rounded-2xl bg-white/10 text-white"><i class="ph-bold ph-cursor-click text-3xl"></i></span><h3 class="mt-8 font-display text-2xl font-bold">Conversão sem parecer forçado</h3><p class="mt-4 leading-8 text-zinc-300">CTAs, prova de credibilidade e sequência de conteúdo planejados para facilitar o contato.</p></article>
+      <article class="bento-card reveal rounded-[28px] bg-white/[.045] p-7 lg:col-span-4"><span class="bento-icon grid h-12 w-12 place-items-center rounded-2xl bg-cyan/10 text-cyan"><i class="ph-bold ph-device-mobile text-2xl"></i></span><h3 class="mt-7 font-display text-xl font-bold">Responsivo de verdade</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Ajustado para celular, tablet e desktop, sem cortes ou espaços laterais.</p></article>
+      <article class="bento-card reveal rounded-[28px] bg-white/[.045] p-7 lg:col-span-4"><span class="bento-icon grid h-12 w-12 place-items-center rounded-2xl bg-violet/10 text-[#b99cff]"><i class="ph-bold ph-gauge text-2xl"></i></span><h3 class="mt-7 font-display text-xl font-bold">Performance</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Estrutura enxuta para carregar rápido e manter o visitante na página.</p></article>
+      <article class="bento-card reveal rounded-[28px] bg-white/[.045] p-7 lg:col-span-4"><span class="bento-icon grid h-12 w-12 place-items-center rounded-2xl bg-whatsapp/10 text-whatsapp"><i class="ph-bold ph-chat-circle-dots text-2xl"></i></span><h3 class="mt-7 font-display text-xl font-bold">Contato facilitado</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Botões e mensagens direcionadas para reduzir o caminho até o WhatsApp.</p></article>
     </div>
   </div>
 </section>
 
-<section id="portfolio" class="py-16 sm:py-20">
-  <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="reveal flex flex-col justify-between gap-7 lg:flex-row lg:items-end">
-      <div class="max-w-3xl">
-        <p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">Portfólio</p>
-        <h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Projetos recentes.</h2>
-        <p class="mt-5 text-lg text-zinc-600">Explore os projetos usando as setas, os indicadores ou deslizando no celular.</p>
+<section id="portfolio" class="relative overflow-hidden bg-ink py-20 text-white sm:py-28">
+  <div class="absolute inset-0 grid-bg opacity-25"></div>
+  <div class="absolute -left-44 top-1/3 h-96 w-96 rounded-full bg-brand/15 blur-[120px]"></div>
+  <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <div class="reveal flex flex-col justify-between gap-6 lg:flex-row lg:items-end"><div class="max-w-3xl"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-[#91a0ff]">Projetos ao vivo</p><h2 class="font-display text-3xl font-bold tracking-[-.04em] sm:text-5xl">Não é mockup. Você está vendo os sites funcionando.</h2><p class="mt-5 text-lg leading-8 text-zinc-400">Selecione um projeto e veja a página real carregada dentro do portfólio.</p></div><div class="swipe-hint flex items-center gap-2 text-sm text-zinc-500 lg:hidden">Deslize os projetos <i class="ph-bold ph-arrow-right"></i></div></div>
+
+    <div class="project-shell reveal mt-12 rounded-[32px] border border-white/10 p-3 shadow-2xl sm:p-5 lg:grid lg:grid-cols-[.34fr_.66fr] lg:gap-5">
+      <div class="project-tabs gap-3 lg:flex lg:flex-col">
+        <button class="project-tab active flex w-full items-start gap-4 rounded-2xl border border-white/10 p-5 text-left transition" data-project="0"><span class="tab-index font-display text-sm font-bold text-zinc-600">01</span><span><strong class="font-display block text-lg">Paiva & Baptista</strong><small class="mt-1 block text-zinc-500">Advocacia trabalhista e previdenciária</small></span></button>
+        <button class="project-tab flex w-full items-start gap-4 rounded-2xl border border-white/10 p-5 text-left text-zinc-400 transition" data-project="1"><span class="tab-index font-display text-sm font-bold text-zinc-600">02</span><span><strong class="font-display block text-lg">Rainbow Class</strong><small class="mt-1 block text-zinc-500">Educação e reforço escolar</small></span></button>
+        <button class="project-tab flex w-full items-start gap-4 rounded-2xl border border-white/10 p-5 text-left text-zinc-400 transition" data-project="2"><span class="tab-index font-display text-sm font-bold text-zinc-600">03</span><span><strong class="font-display block text-lg">CEFIS Fisioterapia</strong><small class="mt-1 block text-zinc-500">Saúde e atendimento clínico</small></span></button>
+        <div class="mt-auto hidden rounded-2xl border border-white/10 bg-white/[.035] p-5 lg:block"><p class="text-xs font-bold uppercase tracking-[.18em] text-zinc-600">Detalhe importante</p><p class="mt-3 text-sm leading-6 text-zinc-400">Clique na prévia para abrir o projeto completo em uma nova aba.</p></div>
       </div>
-      <div class="flex items-center justify-between gap-5 lg:justify-end">
-        <span id="portfolioCounter" class="min-w-12 text-sm font-semibold tabular-nums text-zinc-500">01 / 03</span>
-        <div class="flex items-center gap-3">
-          <button id="prevProject" type="button" class="carousel-btn grid h-12 w-12 place-items-center rounded-full border border-zinc-200 bg-white text-zinc-800 shadow-sm transition hover:-translate-y-0.5 hover:border-brand hover:text-brand hover:shadow-md" aria-label="Projeto anterior"><i class="ph-bold ph-arrow-left text-lg"></i></button>
-          <button id="nextProject" type="button" class="carousel-btn grid h-12 w-12 place-items-center rounded-full border border-zinc-200 bg-white text-zinc-800 shadow-sm transition hover:-translate-y-0.5 hover:border-brand hover:text-brand hover:shadow-md" aria-label="Próximo projeto"><i class="ph-bold ph-arrow-right text-lg"></i></button>
+
+      <div class="project-stage-wrap mt-5 min-w-0 overflow-hidden rounded-[24px] border border-white/10 bg-zinc-900 lg:mt-0">
+        <div class="flex h-11 items-center gap-2 border-b border-white/10 px-4"><span class="h-2.5 w-2.5 rounded-full bg-red-400"></span><span class="h-2.5 w-2.5 rounded-full bg-yellow-400"></span><span class="h-2.5 w-2.5 rounded-full bg-green-400"></span><span id="browserUrl" class="ml-3 truncate text-xs text-zinc-500">paiva-baptista.vercel.app</span><span class="ml-auto hidden items-center gap-1 text-xs text-whatsapp sm:flex"><span class="h-1.5 w-1.5 rounded-full bg-whatsapp"></span> ao vivo</span></div>
+        <div class="relative">
+          <div class="live-panel active" data-url="https://paiva-baptista.vercel.app/"><div class="live-stage"><iframe class="live-frame" src="https://paiva-baptista.vercel.app/" title="Paiva & Baptista Advogados" loading="lazy" tabindex="-1"></iframe><a class="live-overlay" href="https://paiva-baptista.vercel.app/" target="_blank" rel="noopener" aria-label="Abrir Paiva & Baptista"></a></div></div>
+          <div class="live-panel" data-url="https://rainbowclass-ten.vercel.app/"><div class="live-stage"><iframe class="live-frame" src="https://rainbowclass-ten.vercel.app/" title="Rainbow Class" loading="lazy" tabindex="-1"></iframe><a class="live-overlay" href="https://rainbowclass-ten.vercel.app/" target="_blank" rel="noopener" aria-label="Abrir Rainbow Class"></a></div></div>
+          <div class="live-panel" data-url="https://cefisfisioterapia.vercel.app/"><div class="live-stage"><iframe class="live-frame" src="https://cefisfisioterapia.vercel.app/" title="CEFIS Fisioterapia" loading="lazy" tabindex="-1"></iframe><a class="live-overlay" href="https://cefisfisioterapia.vercel.app/" target="_blank" rel="noopener" aria-label="Abrir CEFIS Fisioterapia"></a></div></div>
+          <div class="live-badge pointer-events-none absolute bottom-3 left-3 z-10 rounded-full border border-white/10 bg-ink/75 px-3 py-2 text-xs font-bold text-white"><i class="ph-fill ph-cursor-click mr-1 text-brand"></i> Clique para abrir</div>
         </div>
       </div>
     </div>
-
-    <div class="relative mt-8 sm:mt-10">
-      <div class="mb-4 flex items-center justify-between rounded-2xl border border-brand/15 bg-brand/5 px-4 py-3 md:hidden">
-        <div><p class="text-sm font-bold text-zinc-800">Há mais projetos</p><p class="text-xs text-zinc-500">Deslize os cards para o lado</p></div>
-        <span class="mobile-swipe-hint grid h-10 w-10 place-items-center rounded-full bg-brand text-white shadow-lg shadow-brand/20"><i class="ph-bold ph-arrow-right text-lg"></i></span>
-      </div>
-
-      <div id="portfolioCarousel" class="portfolio-track hide-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-5 pr-8 sm:gap-6 sm:pr-0" tabindex="0" aria-label="Carrossel de projetos">
-        <a href="https://paiva-baptista.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100">
-            <div class="live-preview" data-live-preview>
-              <iframe src="https://paiva-baptista.vercel.app/" title="Prévia ao vivo do site Paiva & Baptista Advogados" loading="eager" tabindex="-1" aria-hidden="true"></iframe>
-            </div>
-          </div>
-          <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7">
-            <div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Projeto mais recente</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Paiva &amp; Baptista Advogados</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div>
-            <p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Site institucional para escritório de advocacia trabalhista e previdenciária, com apresentação da equipe, áreas de atuação, FAQ e contatos estratégicos.</p>
-            <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-zinc-500"><span class="rounded-full border border-zinc-200 px-3 py-1.5">Advocacia</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Institucional</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Responsivo</span></div>
-          </div>
-        </a>
-
-        <a href="https://rainbowclass-ten.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100">
-            <div class="live-preview" data-live-preview>
-              <iframe src="https://rainbowclass-ten.vercel.app/" title="Prévia ao vivo do site Rainbow Class" loading="eager" tabindex="-1" aria-hidden="true"></iframe>
-            </div>
-          </div>
-          <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Educação</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Rainbow Class</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div><p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Página para reforço escolar e acompanhamento educacional personalizado.</p><div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-zinc-500"><span class="rounded-full border border-zinc-200 px-3 py-1.5">Educação</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Landing page</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Mobile-first</span></div></div>
-        </a>
-
-        <a href="https://cefisfisioterapia.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100">
-            <div class="live-preview" data-live-preview>
-              <iframe src="https://cefisfisioterapia.vercel.app/" title="Prévia ao vivo do site CEFIS Fisioterapia" loading="eager" tabindex="-1" aria-hidden="true"></iframe>
-            </div>
-          </div>
-          <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Saúde</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Cefis Fisioterapia</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div><p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Site profissional para clínica de fisioterapia, com apresentação dos serviços e acesso rápido aos canais de atendimento.</p><div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-zinc-500"><span class="rounded-full border border-zinc-200 px-3 py-1.5">Saúde</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Clínica</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Conversão</span></div></div>
-        </a>
-      </div>
-
-      <div class="portfolio-edge-hint pointer-events-none absolute bottom-12 right-0 top-[5.25rem] z-10 w-10 md:hidden"></div>
-      <div id="portfolioDots" class="mt-3 flex items-center justify-center gap-2" aria-label="Selecionar projeto"></div>
-      <p class="mt-4 flex items-center justify-center gap-2 text-center text-xs font-medium text-zinc-500 md:hidden"><i class="ph ph-hand-swipe-left text-base text-brand"></i> Arraste para ver os outros sites</p>
-    </div>
   </div>
 </section>
 
-<section id="processo" class="bg-zinc-100 py-20 sm:py-28">
+<section id="processo" class="py-20 sm:py-28">
   <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-    <div class="reveal mx-auto max-w-3xl text-center"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">Como funciona</p><h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Um processo simples, do briefing ao lançamento.</h2></div>
-    <div class="mt-14 grid gap-5 md:grid-cols-2 lg:grid-cols-4">
-      <div class="reveal rounded-3xl bg-white p-7 shadow-sm"><span class="font-display text-4xl font-bold text-brand/25">01</span><h3 class="mt-6 text-xl font-bold">Briefing</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Entendo o negócio, o público e o objetivo principal da página.</p></div>
-      <div class="reveal rounded-3xl bg-white p-7 shadow-sm"><span class="font-display text-4xl font-bold text-brand/25">02</span><h3 class="mt-6 text-xl font-bold">Estrutura</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Organizo seções, conteúdo e hierarquia da informação.</p></div>
-      <div class="reveal rounded-3xl bg-white p-7 shadow-sm"><span class="font-display text-4xl font-bold text-brand/25">03</span><h3 class="mt-6 text-xl font-bold">Desenvolvimento</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Construo a página e ajusto a experiência para web e mobile.</p></div>
-      <div class="reveal rounded-3xl bg-white p-7 shadow-sm"><span class="font-display text-4xl font-bold text-brand/25">04</span><h3 class="mt-6 text-xl font-bold">Publicação</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Após a revisão, a página é publicada e entregue pronta para uso.</p></div>
+    <div class="reveal mx-auto max-w-3xl text-center"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">Do briefing ao lançamento</p><h2 class="font-display text-3xl font-bold tracking-[-.04em] sm:text-5xl">Um processo claro, sem enrolação.</h2></div>
+    <div class="relative mt-14 grid gap-5 lg:grid-cols-4">
+      <div class="absolute left-[12.5%] right-[12.5%] top-8 hidden h-px bg-gradient-to-r from-transparent via-brand/30 to-transparent lg:block"></div>
+      <article class="reveal relative rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm"><span class="relative z-10 grid h-16 w-16 place-items-center rounded-2xl bg-ink font-display text-xl font-bold text-white shadow-lg">01</span><h3 class="mt-7 text-xl font-bold">Briefing</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Entendo seu negócio, público, objetivo, diferenciais e referências visuais.</p></article>
+      <article class="reveal relative rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm"><span class="relative z-10 grid h-16 w-16 place-items-center rounded-2xl bg-ink font-display text-xl font-bold text-white shadow-lg">02</span><h3 class="mt-7 text-xl font-bold">Estrutura</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Organizo a mensagem e construo o caminho que o visitante percorrerá.</p></article>
+      <article class="reveal relative rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm"><span class="relative z-10 grid h-16 w-16 place-items-center rounded-2xl bg-ink font-display text-xl font-bold text-white shadow-lg">03</span><h3 class="mt-7 text-xl font-bold">Criação</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Desenvolvo visual, responsividade, interações e ajustes de performance.</p></article>
+      <article class="reveal relative rounded-3xl border border-zinc-200 bg-white p-7 shadow-sm"><span class="relative z-10 grid h-16 w-16 place-items-center rounded-2xl bg-ink font-display text-xl font-bold text-white shadow-lg">04</span><h3 class="mt-7 text-xl font-bold">Publicação</h3><p class="mt-3 text-sm leading-7 text-zinc-600">Revisamos, colocamos no ar e deixamos tudo pronto para receber clientes.</p></article>
     </div>
   </div>
 </section>
 
-<section id="faq" class="py-20 sm:py-28">
+<section id="faq" class="bg-zinc-100 py-20 sm:py-28">
   <div class="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
-    <div class="reveal text-center"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">FAQ</p><h2 class="font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Dúvidas frequentes.</h2></div>
+    <div class="reveal text-center"><p class="mb-4 text-sm font-bold uppercase tracking-[.2em] text-brand">FAQ</p><h2 class="font-display text-3xl font-bold tracking-[-.04em] sm:text-5xl">Dúvidas frequentes.</h2></div>
     <div class="mt-12 space-y-3">
-      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">Quanto tempo leva para a página ficar pronta?</span><i class="faq-icon ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">O prazo depende do tamanho do projeto e da disponibilidade dos materiais. Após o briefing, o cronograma é definido com clareza antes do início.</p></div></div>
-      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">A página funciona bem no celular?</span><i class="faq-icon ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">Sim. O projeto é construído com abordagem mobile-first e testado em diferentes larguras de tela.</p></div></div>
-      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">Preciso fornecer todo o texto?</span><i class="faq-icon ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">Você fornece as informações essenciais do negócio. A organização e a adaptação do conteúdo para a página fazem parte do processo.</p></div></div>
-      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">O site pode usar domínio próprio?</span><i class="faq-icon ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">Sim. A página pode ser publicada em um domínio próprio, conforme a configuração escolhida para o projeto.</p></div></div>
+      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">Quanto tempo leva para o site ficar pronto?</span><i class="faq-plus ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">O prazo depende do tamanho do projeto e da entrega dos materiais. Depois do briefing, o cronograma é definido antes do início.</p></div></div>
+      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">O site funciona bem no celular?</span><i class="faq-plus ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">Sim. O layout é desenvolvido com prioridade para telas menores e testado em diferentes larguras.</p></div></div>
+      <div class="faq-item reveal rounded-2xl border border-zinc-200 bg-white"><button class="faq-btn flex w-full items-center justify-between gap-4 p-6 text-left"><span class="font-display font-bold">Preciso escrever todos os textos?</span><i class="faq-plus ph-bold ph-plus text-xl transition-transform"></i></button><div class="faq-content"><p class="px-6 pb-6 text-sm leading-7 text-zinc-600">Você fornece as informações essenciais. Eu organizo e adapto o conteúdo para uma leitura clara e estratégica.</p></div></div>
     </div>
   </div>
 </section>
 
-<section class="px-4 pb-6 sm:px-6 lg:px-8">
-  <div class="noise relative mx-auto max-w-7xl overflow-hidden rounded-[32px] bg-ink px-6 py-16 text-center text-white sm:px-10 sm:py-20">
-    <div class="absolute inset-0 grid-bg opacity-50"></div><div class="absolute left-1/2 top-0 h-64 w-96 -translate-x-1/2 rounded-full bg-brand/30 blur-[110px]"></div>
-    <div class="relative mx-auto max-w-3xl"><p class="text-sm font-bold uppercase tracking-[.2em] text-[#8aa0ff]">Próximo projeto</p><h2 class="mt-4 font-display text-3xl font-bold tracking-[-.03em] sm:text-5xl">Vamos transformar sua ideia em uma página profissional?</h2><p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">Envie uma mensagem com o tipo de negócio e o objetivo da página. A partir disso, alinhamos a melhor estrutura para o projeto.</p><a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20um%20novo%20site." target="_blank" rel="noopener" class="mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-semibold text-white hover:brightness-110"><span class="wpp-icon-chip" aria-hidden="true"><img src="wppsemfundo.png" alt="" /></span> Conversar sobre meu projeto</a></div>
+<section class="px-4 py-6 sm:px-6 lg:px-8">
+  <div class="spotlight grain relative mx-auto max-w-7xl overflow-hidden rounded-[34px] bg-ink px-6 py-16 text-center text-white sm:px-10 sm:py-24">
+    <div class="absolute inset-0 grid-bg opacity-40"></div><div class="aurora left-1/2 top-0 -translate-x-1/2 bg-brand"></div>
+    <div class="relative mx-auto max-w-3xl"><p class="text-sm font-bold uppercase tracking-[.2em] text-[#91a0ff]">Seu projeto pode ser o próximo</p><h2 class="mt-5 font-display text-3xl font-bold tracking-[-.04em] sm:text-6xl">Vamos construir um site que você tenha orgulho de mostrar?</h2><p class="mx-auto mt-6 max-w-2xl text-lg leading-8 text-zinc-400">Me conte o que você faz e qual resultado espera da página. A partir disso, desenhamos uma presença digital à altura do seu trabalho.</p><a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20conversar%20sobre%20um%20novo%20site." target="_blank" rel="noopener" class="magnetic mt-9 inline-flex items-center justify-center gap-2 rounded-full bg-whatsapp px-8 py-4 font-bold text-white shadow-xl shadow-whatsapp/20"><span class="whatsapp-chip"><img src="wppsemfundo.png" alt=""></span> Conversar sobre meu projeto</a></div>
   </div>
 </section>
 </main>
 
 <footer class="bg-white py-10">
-  <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-4 text-center sm:px-6 md:flex-row md:text-left lg:px-8">
-    <div><p class="font-display text-lg font-bold">Eduardo Simionato</p><p class="text-xs text-zinc-500">Landing pages e sites profissionais</p></div>
-    <p class="text-sm text-zinc-500">© 2026 Eduardo Simionato. Todos os direitos reservados.</p>
-  </div>
+  <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-5 px-4 text-center sm:px-6 md:flex-row md:text-left lg:px-8"><div><p class="font-display text-lg font-bold">Eduardo Simionato<span class="text-brand">.</span></p><p class="text-xs text-zinc-500">Landing pages e sites profissionais</p></div><p class="text-sm text-zinc-500">© 2026 Eduardo Simionato. Todos os direitos reservados.</p></div>
 </footer>
 
-<a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" aria-label="Falar com Eduardo no WhatsApp" class="fixed bottom-4 right-4 z-40 h-14 w-14 overflow-hidden rounded-full shadow-2xl transition hover:scale-105 sm:bottom-6 sm:right-6"><img src="wppcomfundo.png" alt="" class="wpp-floating-image" /></a>
+<a href="https://wa.me/5512991402201?text=Olá,%20Eduardo!%20Gostaria%20de%20um%20orçamento." target="_blank" rel="noopener" aria-label="Falar com Eduardo no WhatsApp" class="fixed bottom-4 right-4 z-40 h-14 w-14 rounded-full shadow-2xl transition hover:scale-105 sm:bottom-6 sm:right-6"><img src="wppcomfundo.png" alt="WhatsApp" class="h-full w-full object-contain"></a>
 
 <script>
+  const root = document.documentElement;
+  const header = document.getElementById('header');
   const menuBtn = document.getElementById('menuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
+  const rotatingWord = document.getElementById('rotatingWord');
+
+  const rotatingWords = ['inesquecível.', 'profissional.', 'marcante.'];
+  let rotatingIndex = 0;
+  if (rotatingWord && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    setInterval(() => {
+      rotatingWord.classList.add('is-changing');
+      setTimeout(() => {
+        rotatingIndex = (rotatingIndex + 1) % rotatingWords.length;
+        rotatingWord.textContent = rotatingWords[rotatingIndex];
+        rotatingWord.classList.remove('is-changing');
+      }, 280);
+    }, 3000);
+  }
+
   menuBtn.addEventListener('click', () => {
     const open = mobileMenu.classList.toggle('hidden') === false;
     menuBtn.setAttribute('aria-expanded', open);
+    document.body.classList.toggle('menu-open', open);
     menuBtn.innerHTML = open ? '<i class="ph ph-x text-2xl"></i>' : '<i class="ph ph-list text-2xl"></i>';
   });
   mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-    mobileMenu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded','false'); menuBtn.innerHTML = '<i class="ph ph-list text-2xl"></i>';
+    mobileMenu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded','false'); document.body.classList.remove('menu-open'); menuBtn.innerHTML='<i class="ph ph-list text-2xl"></i>';
   }));
+
+  const updateScroll = () => {
+    const max = document.documentElement.scrollHeight - innerHeight;
+    const pct = max > 0 ? (scrollY / max) * 100 : 0;
+    root.style.setProperty('--progress', pct + '%');
+    header.classList.toggle('shadow-2xl', scrollY > 20);
+    header.classList.toggle('bg-ink/90', scrollY > 20);
+  };
+  addEventListener('scroll', updateScroll, {passive:true}); updateScroll();
+
+  addEventListener('pointermove', e => {
+    root.style.setProperty('--mx', e.clientX + 'px');
+    root.style.setProperty('--my', e.clientY + 'px');
+  }, {passive:true});
+
+  const observer = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (entry.isIntersecting) { entry.target.classList.add('visible'); observer.unobserve(entry.target); }
+  }), {threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  const counterObserver = new IntersectionObserver(entries => entries.forEach(entry => {
+    if (!entry.isIntersecting) return;
+    const el = entry.target; const target = Number(el.dataset.target || 0); let value = 0;
+    const timer = setInterval(() => { value += 1; el.textContent = value; if (value >= target) clearInterval(timer); }, 260);
+    counterObserver.unobserve(el);
+  }), {threshold:.8});
+  document.querySelectorAll('.counter').forEach(el => counterObserver.observe(el));
+
+  const scaleFrames = () => {
+    document.querySelectorAll('.live-stage').forEach(stage => {
+      const frame = stage.querySelector('.live-frame'); if (!frame) return;
+      const scale = stage.clientWidth / 1440;
+      frame.style.transform = `scale(${scale})`;
+    });
+  };
+  if ('ResizeObserver' in window) {
+    const frameResize = new ResizeObserver(scaleFrames);
+    document.querySelectorAll('.live-stage').forEach(stage => frameResize.observe(stage));
+  }
+  addEventListener('load', scaleFrames);
+  addEventListener('resize', () => {
+    scaleFrames();
+    if (innerWidth >= 1024) {
+      mobileMenu.classList.add('hidden');
+      menuBtn.setAttribute('aria-expanded','false');
+      document.body.classList.remove('menu-open');
+      menuBtn.innerHTML='<i class="ph ph-list text-2xl"></i>';
+    }
+  });
+
+  const tabs = [...document.querySelectorAll('.project-tab')];
+  const panels = [...document.querySelectorAll('.live-panel')];
+  const browserUrl = document.getElementById('browserUrl');
+  const activateProject = index => {
+    tabs.forEach((t,i) => t.classList.toggle('active', i===index));
+    panels.forEach((p,i) => p.classList.toggle('active', i===index));
+    const url = panels[index].dataset.url.replace(/^https?:\/\//,'').replace(/\/$/,'');
+    browserUrl.textContent = url;
+    requestAnimationFrame(scaleFrames);
+  };
+  tabs.forEach((tab,i) => tab.addEventListener('click', () => activateProject(i)));
+
   document.querySelectorAll('.faq-btn').forEach(btn => btn.addEventListener('click', () => {
     const item = btn.closest('.faq-item');
     document.querySelectorAll('.faq-item').forEach(other => { if (other !== item) other.classList.remove('open'); });
     item.classList.toggle('open');
   }));
-  const observer = new IntersectionObserver(entries => entries.forEach(entry => { if(entry.isIntersecting){ entry.target.classList.add('visible'); observer.unobserve(entry.target); } }), { threshold: .12 });
-  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
-  const carousel = document.getElementById('portfolioCarousel');
-  const prevProject = document.getElementById('prevProject');
-  const nextProject = document.getElementById('nextProject');
-  const portfolioCounter = document.getElementById('portfolioCounter');
-  const portfolioDots = document.getElementById('portfolioDots');
-
-  if (carousel && prevProject && nextProject) {
-    const cards = [...carousel.querySelectorAll('[data-project]')];
-    let activeIndex = 0;
-
-    cards.forEach((_, index) => {
-      const dot = document.createElement('button');
-      dot.type = 'button';
-      dot.className = 'portfolio-dot';
-      dot.setAttribute('aria-label', `Ir para o projeto ${index + 1}`);
-      dot.addEventListener('click', () => goTo(index));
-      portfolioDots.appendChild(dot);
+  if (matchMedia('(hover:hover) and (pointer:fine)').matches) {
+    document.querySelectorAll('.magnetic').forEach(el => {
+      el.addEventListener('mousemove', e => { const r=el.getBoundingClientRect(); el.style.transform=`translate(${(e.clientX-r.left-r.width/2)*.12}px,${(e.clientY-r.top-r.height/2)*.18}px)`; });
+      el.addEventListener('mouseleave', () => el.style.transform='');
     });
-
-    const dots = [...portfolioDots.children];
-    const goTo = index => {
-      activeIndex = Math.max(0, Math.min(index, cards.length - 1));
-      cards[activeIndex].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
-      updateControls();
-    };
-
-    const updateControls = () => {
-      portfolioCounter.textContent = `${String(activeIndex + 1).padStart(2, '0')} / ${String(cards.length).padStart(2, '0')}`;
-      dots.forEach((dot, index) => dot.classList.toggle('active', index === activeIndex));
-      prevProject.disabled = activeIndex === 0;
-      nextProject.disabled = activeIndex === cards.length - 1;
-    };
-
-    prevProject.addEventListener('click', () => goTo(activeIndex - 1));
-    nextProject.addEventListener('click', () => goTo(activeIndex + 1));
-    carousel.addEventListener('keydown', event => {
-      if (event.key === 'ArrowLeft') { event.preventDefault(); goTo(activeIndex - 1); }
-      if (event.key === 'ArrowRight') { event.preventDefault(); goTo(activeIndex + 1); }
+    document.querySelectorAll('.tilt').forEach(el => {
+      el.addEventListener('mousemove', e => { const r=el.getBoundingClientRect(); const x=(e.clientX-r.left)/r.width-.5; const y=(e.clientY-r.top)/r.height-.5; el.style.transform=`perspective(900px) rotateX(${-y*7}deg) rotateY(${x*7}deg) translateY(-4px)`; el.style.boxShadow='0 20px 50px rgba(0,0,0,.10)'; });
+      el.addEventListener('mouseleave', () => { el.style.transform=''; el.style.boxShadow=''; });
     });
-
-    let scrollTimer;
-    carousel.addEventListener('scroll', () => {
-      clearTimeout(scrollTimer);
-      scrollTimer = setTimeout(() => {
-        const left = carousel.scrollLeft;
-        activeIndex = cards.reduce((best, card, index) => {
-          const currentDistance = Math.abs(card.offsetLeft - left);
-          const bestDistance = Math.abs(cards[best].offsetLeft - left);
-          return currentDistance < bestDistance ? index : best;
-        }, 0);
-        updateControls();
-      }, 90);
-    }, { passive: true });
-
-    updateControls();
   }
-
-
-  // Mantém as prévias dos projetos realmente ao vivo, em formato desktop,
-  // redimensionadas para preencher cada card sem faixas brancas laterais.
-  const resizeLivePreviews = () => {
-    document.querySelectorAll('[data-live-preview]').forEach(preview => {
-      const iframe = preview.querySelector('iframe');
-      if (!iframe) return;
-      const scale = preview.clientWidth / 1440;
-      iframe.style.transform = `scale(${scale})`;
-    });
-  };
-
-  resizeLivePreviews();
-  window.addEventListener('resize', resizeLivePreviews, { passive: true });
-  if ('ResizeObserver' in window) {
-    const previewObserver = new ResizeObserver(resizeLivePreviews);
-    document.querySelectorAll('[data-live-preview]').forEach(preview => previewObserver.observe(preview));
-  }
-
 </script>
 </body>
 </html>
