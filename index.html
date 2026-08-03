@@ -113,6 +113,8 @@
     .portfolio-card { flex: 0 0 84%; min-width: 0; height: 34rem; }
     .portfolio-media { height: 17.5rem; flex: 0 0 17.5rem; }
     .portfolio-media img, .portfolio-media .site-preview { width:100%; height:100%; }
+    .live-preview { position:relative; width:100%; height:100%; overflow:hidden; background:#f4f4f5; }
+    .live-preview iframe { position:absolute; top:0; left:0; width:1440px; height:900px; border:0; transform-origin:top left; pointer-events:none; background:white; }
     .portfolio-body { min-height:0; }
     .portfolio-title { min-height:3.5rem; }
     .portfolio-description { display:-webkit-box; -webkit-box-orient:vertical; -webkit-line-clamp:3; overflow:hidden; }
@@ -280,7 +282,11 @@
 
       <div id="portfolioCarousel" class="portfolio-track hide-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto scroll-smooth pb-5 pr-8 sm:gap-6 sm:pr-0" tabindex="0" aria-label="Carrossel de projetos">
         <a href="https://paiva-baptista.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100"><img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fpaiva-baptista.vercel.app%2F?w=1600&h=900" alt="Prévia real do site Paiva &amp; Baptista Advogados" class="h-full w-full object-cover object-top" loading="lazy" decoding="async" /></div>
+          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100">
+            <div class="live-preview" data-live-preview>
+              <iframe src="https://paiva-baptista.vercel.app/" title="Prévia ao vivo do site Paiva & Baptista Advogados" loading="eager" tabindex="-1" aria-hidden="true"></iframe>
+            </div>
+          </div>
           <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7">
             <div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Projeto mais recente</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Paiva &amp; Baptista Advogados</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div>
             <p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Site institucional para escritório de advocacia trabalhista e previdenciária, com apresentação da equipe, áreas de atuação, FAQ e contatos estratégicos.</p>
@@ -289,12 +295,20 @@
         </a>
 
         <a href="https://rainbowclass-ten.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100"><img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Frainbowclass-ten.vercel.app%2F?w=1600&h=900" alt="Prévia real do site Rainbow Class" class="h-full w-full object-cover object-top" loading="lazy" decoding="async" /></div>
+          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100">
+            <div class="live-preview" data-live-preview>
+              <iframe src="https://rainbowclass-ten.vercel.app/" title="Prévia ao vivo do site Rainbow Class" loading="eager" tabindex="-1" aria-hidden="true"></iframe>
+            </div>
+          </div>
           <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Educação</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Rainbow Class</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div><p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Página para reforço escolar e acompanhamento educacional personalizado.</p><div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-zinc-500"><span class="rounded-full border border-zinc-200 px-3 py-1.5">Educação</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Landing page</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Mobile-first</span></div></div>
         </a>
 
         <a href="https://cefisfisioterapia.vercel.app/" target="_blank" rel="noopener" class="portfolio-card project-card reveal group flex snap-start flex-col overflow-hidden rounded-[28px] border border-zinc-200 bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-card" data-project>
-          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100"><img src="https://s.wordpress.com/mshots/v1/https%3A%2F%2Fcefisfisioterapia.vercel.app%2F?w=1600&h=900" alt="Prévia real do site CEFIS Fisioterapia" class="h-full w-full object-cover object-top" loading="lazy" decoding="async" /></div>
+          <div class="portfolio-media overflow-hidden border-b border-zinc-100 bg-zinc-100">
+            <div class="live-preview" data-live-preview>
+              <iframe src="https://cefisfisioterapia.vercel.app/" title="Prévia ao vivo do site CEFIS Fisioterapia" loading="eager" tabindex="-1" aria-hidden="true"></iframe>
+            </div>
+          </div>
           <div class="portfolio-body flex flex-1 flex-col p-6 sm:p-7"><div class="flex items-start justify-between gap-4"><div><p class="text-xs font-bold uppercase tracking-wider text-brand">Saúde</p><h3 class="portfolio-title mt-2 font-display text-2xl font-bold">Cefis Fisioterapia</h3></div><i class="ph-bold ph-arrow-up-right text-xl text-zinc-400 transition group-hover:text-brand"></i></div><p class="portfolio-description mt-3 flex-1 leading-7 text-zinc-600">Site profissional para clínica de fisioterapia, com apresentação dos serviços e acesso rápido aos canais de atendimento.</p><div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-zinc-500"><span class="rounded-full border border-zinc-200 px-3 py-1.5">Saúde</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Clínica</span><span class="rounded-full border border-zinc-200 px-3 py-1.5">Conversão</span></div></div>
         </a>
       </div>
@@ -422,6 +436,26 @@
 
     updateControls();
   }
+
+
+  // Mantém as prévias dos projetos realmente ao vivo, em formato desktop,
+  // redimensionadas para preencher cada card sem faixas brancas laterais.
+  const resizeLivePreviews = () => {
+    document.querySelectorAll('[data-live-preview]').forEach(preview => {
+      const iframe = preview.querySelector('iframe');
+      if (!iframe) return;
+      const scale = preview.clientWidth / 1440;
+      iframe.style.transform = `scale(${scale})`;
+    });
+  };
+
+  resizeLivePreviews();
+  window.addEventListener('resize', resizeLivePreviews, { passive: true });
+  if ('ResizeObserver' in window) {
+    const previewObserver = new ResizeObserver(resizeLivePreviews);
+    document.querySelectorAll('[data-live-preview]').forEach(preview => previewObserver.observe(preview));
+  }
+
 </script>
 </body>
 </html>
